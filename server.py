@@ -49,16 +49,6 @@ def predictJSON():
 
     # Extraer información de detecciones
     detections = []
-    # for box in results[0].boxes:
-    #     detections.append({
-    #         "confidence": float(box.conf),       # Confianza del modelo
-    #         "xmin": int(box.xyxy[0][0]),         # Coordenada superior izquierda en x
-    #         "ymin": int(box.xyxy[0][1]),         # Coordenada superior izquierda en y
-    #         "xmax": int(box.xyxy[0][2]),         # Coordenada inferior derecha en x
-    #         "ymax": int(box.xyxy[0][3])          # Coordenada inferior derecha en y
-    #     })
-
-    detections = results[0].boxes
 
     for box in detections:
         x1, y1, x2, y2 = map(int, box.xyxy[0])  # Coordenadas de la caja
@@ -68,13 +58,11 @@ def predictJSON():
         cv2.putText(img_rs, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 
                     0.5, (255, 0, 0), 2)
 
-    img_rs = image_to_binary(img_rs)
-    print(img_rs)
+    detections = results[0].boxes
 
     # Devolver los resultados en formato JSON
     response = jsonify({
         'detections': len(detections),
-        'image_decoded': img_rs
     })
 
 if __name__ == '__main__':
