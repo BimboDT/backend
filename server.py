@@ -1,38 +1,46 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+
+# Librerías
 from ultralytics import YOLO
 import cv2
-import base64
+import requests
 import numpy as np
-
-# Decodifica una imagen en Base64 a un formato OpenCV
-def base64_to_image(base64_string):
-    img_data = base64.b64decode(base64_string)
-    np_array = np.frombuffer(img_data, np.uint8)
-    image = cv2.imdecode(np_array, cv2.IMREAD_COLOR)
-    return image
 
 ## Server configuration
 server = Flask(__name__)
 CORS(server)
+
+# Cargar el modelo YOLO
+model = YOLO('best.pt')
+
+# Función para descargar la imagen desde una URL y convertirla al formato OpenCV
+def url_to_image(url):
+    response = requests.get(url)
+    if response.status_code == 200:
+        img_array = np.frombuffer(response.content, np.uint8)
+        image = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
+        return image
+    else:
+        return None
 
 # Ruta de prueba
 @server.route('/test', methods=['GET'])
 def test():
     return jsonify({"message": "API funcionando correctamente"}), 200
 
-# Cargar el modelo YOLO
-model = YOLO('best.pt')
-
 # Ruta para predicción
 @server.route('/predict', methods=['POST'])
 def predictJSON():
-    # Obtener y decodificar la imagen en base64
+
+    # Cargar la imagen
     data = request.json
-    base64_string = data['image']
-    image = base64_to_image(base64_string)
+    imgUrl = data['imageUrl']
+
+    # Descargar la imagen
+    image = url_to_image(imgUrl)
     if image is None:
-        return jsonify({"error": "No se pudo decodificar la imagen"}), 400
+        return jsonify({"message": "No se pudo obtener la imagen desde la URL"}), 400
 
     # Redimensionar la imagen a 640x640
     img_rs = cv2.resize(image, (640, 640))
