@@ -14,6 +14,10 @@ CORS(server)
 # Cargar el modelo YOLO
 model = YOLO('best.pt')
 
+# Bucket URL (Oracle Cloud Storage)
+bucketUrl = "https://objectstorage.us-phoenix-1.oraclecloud.com/p/7hs26atNwRAfFpn_TAJK6PIEriKMfVtAnnROyQWxqCr0pELa62lbaKvFwVw4bxON/n/axxbc0j4otis/b/bimbucket/o/"
+
+
 # Función para descargar la imagen desde una URL y convertirla al formato OpenCV
 def url_to_image(url):
     response = requests.get(url)
@@ -23,6 +27,17 @@ def url_to_image(url):
         return image
     else:
         return None
+    
+# Función para subir la imagen procesada a Oracle Cloud Storage
+def upload_image(bucket_url, image):
+    # Convertir la imagen a un formato compatible (PNG)
+    _, buffer = cv2.imencode('.png', image)
+    headers = {
+        "Content-Type": "image/png",
+        "Content-Disposition": "attachment; filename=Procesado.png"
+    }
+    response = requests.put(bucket_url, headers=headers, data=buffer.tobytes())
+    return response.status_code == 200
 
 # Ruta de prueba
 @server.route('/test', methods=['GET'])
@@ -58,8 +73,19 @@ def predictJSON():
             "xmax": int(box.xyxy[0][2]),         # Coordenada inferior derecha en x
             "ymax": int(box.xyxy[0][3])          # Coordenada inferior derecha en y
         })
+        # Dibujar las cajas y etiquetas en la imagen
+        x1, y1, x2, y2 = map(int, box.xyxy[0])  # Coordenadas de la caja
+        score = box.conf[0]  # Confianza
+        label = f"Caja ({score:.2f})"
+        cv2.rectangle(img_rs, (x1, y1), (x2, y2), (255, 0, 0), 2)
+        cv2.putText(img_rs, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 
+                    0.5, (255, 0, 0), 2)
 
+    #uploadImage = upload_image(bucketUrl, img_rs)
     detections = results[0].boxes
+
+    # if not uploadImage:
+    #     return jsonify({"error": "No se pudo subir la imagen procesada al bucket"}), 500
 
     # Devolver los resultados en formato JSON
     return jsonify({'detections': len(detections)})
