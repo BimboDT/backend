@@ -61,9 +61,10 @@ def predictJSON():
     detections = results[0].boxes
 
     # Devolver los resultados en formato JSON
-    response = jsonify({
-        'detections': len(detections),
+    return jsonify({
+        'detections': len(detections)
     })
+    
 
 if __name__ == '__main__':
     # Iniciar el servidor
