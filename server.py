@@ -1,8 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-
-# Librerías
-from ultralytics import YOLO
+from ultralytics import YOLO    #type: ignore
 import cv2
 import requests
 import numpy as np
