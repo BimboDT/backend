@@ -6,10 +6,12 @@ import { Model } from 'sequelize';
 
 // Enum for the location of racks
 enum RackLocations {
-    A = 'A',
-    B = 'B',
-    C = 'C',
-    D = 'D',
+    Reserva1 = 'Reserva1',
+    Reserva2 = 'Reserva2',
+    Outbound = 'Outbound',
+    Inbound = 'Inbound',
+    Picking = 'Picking',
+    Packing = 'Packing',
 }
 
 // Interface for the Image Model
