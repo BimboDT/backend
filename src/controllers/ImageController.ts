@@ -20,7 +20,7 @@ class ImageController extends AbstractController {
     }
 
     // Define all the endpoints of the controller "ImageController"
-    protected iniRoutes(): void {
+    protected initRoutes(): void {
         // Test endpoint
         this.router.get("/test", this.getTest.bind(this));
     }

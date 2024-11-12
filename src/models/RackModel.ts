@@ -6,10 +6,12 @@ import { Model } from 'sequelize';
 
 // Enum for the location of racks
 enum RackLocations {
-    A = 'A',
-    B = 'B',
-    C = 'C',
-    D = 'D',
+    Reserva1 = 'Rerserva1',
+    Reserva2 = 'Rerserva2',
+    Outbound = 'Outbound',
+    Picking = 'Picking',
+    Packing = 'Packing',
+    Inbound = 'Inbound',
 }
 
 // Interface for the Rack Model
@@ -49,7 +51,6 @@ module.exports = (sequelize: any, DataTypes: any) => {
                 type: DataTypes.ENUM,
                 values: Object.values(RackLocations),
                 allowNull: false,
-                primaryKey: true,
             },
             Pasillo: {
                 type: DataTypes.STRING,
