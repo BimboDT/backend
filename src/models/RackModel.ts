@@ -43,7 +43,7 @@ module.exports = (sequelize: any, DataTypes: any) => {
     Rack.init(
         {
             IdRack: {
-                type: DataTypes.INTEGER,
+                type: DataTypes.STRING,
                 allowNull: false,
                 primaryKey: true,
             },

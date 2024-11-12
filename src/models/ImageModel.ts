@@ -14,11 +14,18 @@ enum RackLocations {
     Packing = 'Packing',
 }
 
+// Enum for the type of image
+enum ImageTypes {
+    Real = 'Real',
+    Procesado = 'Procesado',
+    Prod = 'Prod'
+}
+
 // Interface for the Image Model
 interface ImageAttributes {
     IdImagen: number;
     Ubicacion: RackLocations;
-    Tipo: boolean;
+    Tipo: ImageTypes;
     Url: string;
     Fecha: string;
 }
@@ -32,7 +39,7 @@ module.exports = (sequelize: any, DataTypes: any) => {
         // Attributes are enforced by the ImageAttributes interface
         public IdImagen!: number;
         public Ubicacion!: RackLocations;
-        public Tipo!: boolean;
+        public Tipo!: ImageTypes;
         public Url!: string;
         public Fecha!: string;
     }
@@ -52,7 +59,8 @@ module.exports = (sequelize: any, DataTypes: any) => {
                 allowNull: false,
             },
             Tipo: {
-                type: DataTypes.BOOLEAN,
+                type: DataTypes.ENUM,
+                values: Object.values(ImageTypes),
                 allowNull: false,
             },
             Url: {
