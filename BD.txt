@@ -1,0 +1,60 @@
+-- Datos para la tabla Usuario
+INSERT INTO Usuario VALUES (101, 'Juan Pérez');
+INSERT INTO Usuario VALUES (102, 'María López');
+INSERT INTO Usuario VALUES (103, 'Carlos Ramírez');
+INSERT INTO Usuario VALUES (104, 'Ana González');
+INSERT INTO Usuario VALUES (105, 'Pedro Sánchez');
+INSERT INTO Usuario VALUES (106, 'Laura Torres');
+INSERT INTO Usuario VALUES (107, 'Luis Martínez');
+INSERT INTO Usuario VALUES (108, 'Carmen Ortiz');
+INSERT INTO Usuario VALUES (109, 'José Morales');
+INSERT INTO Usuario VALUES (110, 'Marta Vázquez');
+
+
+-- Datos para la tabla Rack
+INSERT INTO Rack VALUES ('F101502', 'Outbound', 'A1', 7, 50, false);
+INSERT INTO Rack VALUES ('K152603', 'Inbound', 'B2', 5, 70, false);
+INSERT INTO Rack VALUES ('D041601', 'Picking', 'C3', 2, 80, true);
+INSERT INTO Rack VALUES ('A051902', 'Packing', 'D4', 3, 60, false);
+INSERT INTO Rack VALUES ('B040603', 'Reserva1', 'E5', 1, 55, false);
+INSERT INTO Rack VALUES ('M072101', 'Reserva2', 'F6', 4, 65, true);
+INSERT INTO Rack VALUES ('G083102', 'Outbound', 'G7', 5, 45, false);
+INSERT INTO Rack VALUES ('K270301', 'Inbound', 'H8', 6, 70, false);
+INSERT INTO Rack VALUES ('G021302', 'Picking', 'I9', 7, 90, true);
+INSERT INTO Rack VALUES ('A042201', 'Packing', 'J10', 1, 95, false);
+
+-- Datos para la tabla Imagen
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Outbound', 'Real', 'https://example.com/image1.jpg', '2024-11-01 ');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Inbound', 'Procesado', 'https://example.com/image2.jpg', '2024-11-02');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Picking', 'Prod', 'https://example.com/image3.jpg', '2024-11-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Packing', 'Real', 'https://example.com/image4.jpg', '2024-11-04');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Procesado', 'https://example.com/image5.jpg', '2024-11-05');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image6.jpg', '2024-11-06');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Outbound', 'Real', 'https://example.com/image7.jpg', '2024-11-07');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Inbound', 'Procesado', 'https://example.com/image8.jpg', '2024-11-08');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Picking', 'Prod', 'https://example.com/image9.jpg', '2024-11-09');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Packing', 'Real', 'https://example.com/image10.jpg', '2024-11-10');
+
+-- Datos para la tabla Producto
+INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU001', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '42', 10, 1);
+INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU002', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '31', 8, 2);
+INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU003', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 3);
+INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU004', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 4);
+INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU005', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 5);
+INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU006', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 6);
+INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU007', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 7);
+INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU008', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '39', 8, 8);
+INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU009', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '42', 15, 9);
+INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU010', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 10);
+
+-- Datos para la tabla Conteo
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (10, '2024-11-01', '2024-10-10', 100, 95, 0, 'F101502', 1, 101);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (20, '2024-11-02', '2024-10-10', 200, 190, 0, 'F101502', 2, 102);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (15, '2024-11-03', '2024-10-10', 150, 150, 0, 'F101502', 3, 103);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (18, '2024-11-04', '2024-10-10', 180, 170, 0, 'K270301', 4, 104);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (12, '2024-11-05', '2024-10-10', 120, 115, 0, 'K270301', 5, 105);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (25, '2024-11-06', '2024-11-03', 250, 240, 0, 'K270301', 6, 106);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (30, '2024-11-07', '2024-11-03', 300, 290, 0, 'B040603', 7, 107);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (35, '2024-11-08', '2024-11-03', 350, 340, 0, 'B040603', 8, 108);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (40, '2024-11-09', '2024-11-03', 400, 395, 0, 'B040603', 9, 109);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (50, '2024-11-10', '2024-11-03', 500, 490, 0, 'B040603', 10, 110);

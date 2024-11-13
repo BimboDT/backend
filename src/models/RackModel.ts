@@ -6,8 +6,8 @@ import { Model } from 'sequelize';
 
 // Enum for the location of racks
 enum RackLocations {
-    Reserva1 = 'Rerserva1',
-    Reserva2 = 'Rerserva2',
+    Reserva1 = 'Reserva1',
+    Reserva2 = 'Reserva2',
     Outbound = 'Outbound',
     Picking = 'Picking',
     Packing = 'Packing',
