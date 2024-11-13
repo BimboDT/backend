@@ -36,25 +36,25 @@ INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Picking', 'Prod', 'htt
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Packing', 'Real', 'https://example.com/image10.jpg', '2024-11-10');
 
 -- Datos para la tabla Producto
-INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU001', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '42', 10, 1);
-INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU002', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '31', 8, 2);
-INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU003', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 3);
-INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU004', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 4);
-INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU005', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 5);
-INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU006', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 6);
-INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU007', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 7);
-INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU008', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '39', 8, 8);
-INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU009', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '42', 15, 9);
-INSERT INTO Producto (SKU, Nombre, Categoria, Desc, NormaEstiba, PiezasXCaja) VALUES ('SKU010', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 10);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU001', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '42', 10, 1);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU002', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '31', 8, 2);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU003', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 3);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU004', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 4);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU005', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 5);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU006', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 6);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU007', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 7);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU008', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '39', 8, 8);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU009', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '42', 15, 9);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU010', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 10);
 
 -- Datos para la tabla Conteo
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (10, '2024-11-01', '2024-10-10', 100, 95, 0, 'F101502', 1, 101);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (20, '2024-11-02', '2024-10-10', 200, 190, 0, 'F101502', 2, 102);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (15, '2024-11-03', '2024-10-10', 150, 150, 0, 'F101502', 3, 103);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (18, '2024-11-04', '2024-10-10', 180, 170, 0, 'K270301', 4, 104);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (12, '2024-11-05', '2024-10-10', 120, 115, 0, 'K270301', 5, 105);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (25, '2024-11-06', '2024-11-03', 250, 240, 0, 'K270301', 6, 106);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (30, '2024-11-07', '2024-11-03', 300, 290, 0, 'B040603', 7, 107);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (35, '2024-11-08', '2024-11-03', 350, 340, 0, 'B040603', 8, 108);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (40, '2024-11-09', '2024-11-03', 400, 395, 0, 'B040603', 9, 109);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas) VALUES (50, '2024-11-10', '2024-11-03', 500, 490, 0, 'B040603', 10, 110);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-01', '2024-10-10', 100, 95, 0, 'F101502', 1, 101);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-02', '2024-10-10', 200, 190, 0, 'F101502', 2, 102);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-03', '2024-10-10', 150, 150, 0, 'F101502', 3, 103);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (18, '2024-11-04', '2024-10-10', 180, 170, 0, 'K270301', 4, 104);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-05', '2024-10-10', 120, 115, 0, 'K270301', 5, 105);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-06', '2024-11-03', 250, 240, 0, 'K270301', 6, 106);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-07', '2024-11-03', 300, 290, 0, 'B040603', 7, 107);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (35, '2024-11-08', '2024-11-03', 350, 340, 0, 'B040603', 8, 108);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (40, '2024-11-09', '2024-11-03', 400, 395, 0, 'B040603', 9, 109);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (50, '2024-11-10', '2024-11-03', 500, 490, 0, 'B040603', 10, 110);
