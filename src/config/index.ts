@@ -8,4 +8,8 @@ export const PREFIX_NAME = NODE_ENV === 'production' ? '' : '-DEV';
 export const AWS_REGION:string = process.env.AWS_REGION || 'us-east-1';
 export const AWS_ACCESS_KEY_ID:string = process.env.AWS_ACCESS_KEY_ID || '';
 export const AWS_SECRET_ACCESS_KEY:string = process.env.AWS_SECRET_ACCESS_KEY || '';
+<<<<<<< HEAD
 export const AWS_SESSION_TOKEN:string = process.env.AWS_SESSION_TOKEN || '';
+=======
+export const AWS_SESSION_TOKEN:string = process.env.AWS_SESSION_TOKEN || '';
+>>>>>>> freddy

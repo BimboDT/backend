@@ -14,7 +14,7 @@ class ImageController extends AbstractController {
     // Class Method
     public static get instance(): AbstractController {
         if (!this._instance) {
-            this._instance = new ImageController("image");
+            this._instance = new ImageController("imagen");
         }
         return this._instance;
     }

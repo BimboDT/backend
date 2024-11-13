@@ -22,7 +22,7 @@ interface ProductAttributes {
     SKU: string;
     Nombre: string;
     Categoria: ProdCategory;
-    Desc: string;
+    Descripcion: string;
     NormaEstiba: string;
     PiezasXCaja: number;
 }
@@ -38,7 +38,7 @@ module.exports = (sequelize: any, DataTypes: any) => {
             public SKU!: string;
             public Nombre!: string;
             public Categoria!: ProdCategory;
-            public Desc!: string;
+            public Descripcion!: string;
             public NormaEstiba!: string;
             public PiezasXCaja!: number;
 
@@ -73,7 +73,7 @@ module.exports = (sequelize: any, DataTypes: any) => {
                     values: Object.values(ProdCategory),
                     allowNull: false,
                 },
-                Desc: {
+                Descripcion: {
                     type: DataTypes.STRING,
                     allowNull: false,
                 },

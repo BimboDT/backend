@@ -6,7 +6,7 @@ import { Model } from 'sequelize';
 
 // Interface for the Usuario Model
 interface UsuarioAttributes {
-    NumeroEmpleado: number;
+    NumEmpleado: number;
     Nombre: string;
 }
 
@@ -17,14 +17,14 @@ module.exports = (sequelize: any, DataTypes: any) => {
         implements UsuarioAttributes 
     {
         // Attributes are enforced by the UsuarioAttributes interface
-        public NumeroEmpleado!: number;
+        public NumEmpleado!: number;
         public Nombre!: string;
     }
 
     // Initializes the Usuario model with its attributes and options
     Usuario.init(
         {
-            NumeroEmpleado: {
+            NumEmpleado: {
                 type: DataTypes.INTEGER,
                 allowNull: false,
                 primaryKey: true,
