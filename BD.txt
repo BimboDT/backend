@@ -1,14 +1,14 @@
--- Datos para la tabla Usuario
-INSERT INTO Usuario VALUES (101, 'Juan Pérez');
-INSERT INTO Usuario VALUES (102, 'María López');
-INSERT INTO Usuario VALUES (103, 'Carlos Ramírez');
-INSERT INTO Usuario VALUES (104, 'Ana González');
-INSERT INTO Usuario VALUES (105, 'Pedro Sánchez');
-INSERT INTO Usuario VALUES (106, 'Laura Torres');
-INSERT INTO Usuario VALUES (107, 'Luis Martínez');
-INSERT INTO Usuario VALUES (108, 'Carmen Ortiz');
-INSERT INTO Usuario VALUES (109, 'José Morales');
-INSERT INTO Usuario VALUES (110, 'Marta Vázquez');
+-- Datos para la tabla Empleado
+INSERT INTO Empleado VALUES (101, 'Juan Pérez');
+INSERT INTO Empleado VALUES (102, 'María López');
+INSERT INTO Empleado VALUES (103, 'Carlos Ramírez');
+INSERT INTO Empleado VALUES (104, 'Ana González');
+INSERT INTO Empleado VALUES (105, 'Pedro Sánchez');
+INSERT INTO Empleado VALUES (106, 'Laura Torres');
+INSERT INTO Empleado VALUES (107, 'Luis Martínez');
+INSERT INTO Empleado VALUES (108, 'Carmen Ortiz');
+INSERT INTO Empleado VALUES (109, 'José Morales');
+INSERT INTO Empleado VALUES (110, 'Marta Vázquez');
 
 
 -- Datos para la tabla Rack
@@ -46,6 +46,18 @@ INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXC
 INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU008', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '39', 8, 8);
 INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU009', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '42', 15, 9);
 INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU010', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 10);
+
+-- Datos para la tabla Pallet
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 1);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 2);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 3);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 4);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 5);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 6);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 7);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 8);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 9);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 10);
 
 -- Datos para la tabla Conteo
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-01', '2024-10-10', 100, 95, 0, 'F101502', 1, 101);
