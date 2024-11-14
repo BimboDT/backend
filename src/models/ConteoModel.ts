@@ -40,7 +40,7 @@ module.exports = (sequelize: any, DataTypes: any) => {
                 foreignKey: "IdProducto",
                 as: "Producto",
             });
-            Conteo.belongsTo(models.Usuario, {
+            Conteo.belongsTo(models.Empleado, {
                 foreignKey: "NumEmpleado",
                 as: "Empleado",
             });

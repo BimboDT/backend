@@ -5,16 +5,16 @@
 import { Model } from 'sequelize';
 
 // Interface for the Usuario Model
-interface UsuarioAttributes {
+interface EmpleadoAttributes {
     NumEmpleado: number;
     Nombre: string;
 }
 
 // Define the Usuario Model, for the Sequelize ORM, representing an employee in the database
 module.exports = (sequelize: any, DataTypes: any) => {
-    class Usuario 
-        extends Model<UsuarioAttributes> 
-        implements UsuarioAttributes 
+    class Empleado 
+        extends Model<EmpleadoAttributes> 
+        implements EmpleadoAttributes 
     {
         // Attributes are enforced by the UsuarioAttributes interface
         public NumEmpleado!: number;
@@ -22,7 +22,7 @@ module.exports = (sequelize: any, DataTypes: any) => {
     }
 
     // Initializes the Usuario model with its attributes and options
-    Usuario.init(
+    Empleado.init(
         {
             NumEmpleado: {
                 type: DataTypes.INTEGER,
@@ -36,8 +36,8 @@ module.exports = (sequelize: any, DataTypes: any) => {
         }, 
         {
             sequelize,
-            modelName: 'Usuario', // Name of the table in the database
+            modelName: 'Empleado', // Name of the table in the database
         }
     );
-    return Usuario;
+    return Empleado;
 }
