@@ -28,13 +28,11 @@ class ConteoController extends AbstractController {
         this.router.get("/consultaUsuario/:numEmp", this.getSpecificEmployee.bind(this));
         this.router.get("/consultaConteo/:fecha", this.getCycleCounting.bind(this));
         this.router.get("/obtenCajas/:ubi", this.getBoxesByLocation.bind(this));
-        
         this.router.post("/crearConteo", this.postCountingReport.bind(this));
-
         this.router.put("/actualizarConteo", this.putCycleCounting.bind(this));
 
         // Web App endpoints
-
+        
 
     }
 
