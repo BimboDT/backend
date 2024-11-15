@@ -41,7 +41,8 @@ module.exports = (sequelize: any, DataTypes: any) => {
     Rack.init(
         {
             IdRack: {
-                type: DataTypes.STRING,
+                type: DataTypes.ENUM,
+                values: Object.values(RackNames),
                 allowNull: false,
                 primaryKey: true,
             },
