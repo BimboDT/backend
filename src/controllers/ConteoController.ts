@@ -5,6 +5,7 @@
 import { Request, Response } from "express";
 import AbstractController from "./AbstractController";
 import db from "../models";
+import { Op } from "sequelize";
 
 // Define the ConteoController class
 class ConteoController extends AbstractController {
@@ -32,8 +33,8 @@ class ConteoController extends AbstractController {
         this.router.put("/actualizarConteo", this.putCycleCounting.bind(this));
 
         // Web App endpoints
-        this.router.get("/numeroRacks", this.getRackCompleteness.bind(this));
-        this.router.get("/numeroIncidencias", this.getNumberOfIncidences.bind(this));
+        this.router.get("/numeroRacks/:ubi/:fechaConteo", this.getRackCompleteness.bind(this)); // 1° filter
+        this.router.get("/numeroIncidencias", this.getNumberOfIncidences.bind(this)); // 2° filter
 
     }
 
@@ -144,32 +145,49 @@ class ConteoController extends AbstractController {
         }
     }
 
-    // CHECARLO
+    // 1° Filtro
     private async getRackCompleteness(req: Request, res: Response) {
         try {
             const { ubi, fechaConteo } = req.params;
     
             const completeness = await db.Conteo.findAll({
-                include: {
-                    model: db.Posicion,
-                    as: 'Posicion',
-                    where: { Ubicacion: ubi },
-                    attributes: ['Capacidad']
+                include: [
+                    {
+                        model: db.Rack,
+                        as: 'Rack',
+                        attributes: [], // Excluye atributos de Rack en el resultado
+                    },
+                    {
+                        model: db.Posicion,
+                        as: 'Posicion',
+                        where: { Ubicacion: ubi },
+                        attributes: [], // Excluye atributos de Posición en el resultado
+                    },
+                ],
+                where: {
+                    FechaConteo: fechaConteo,
+                    [Op.and]: db.Sequelize.where(
+                        db.Sequelize.literal(`SUBSTRING(Conteo.IdPos, 1, 1)`),
+                        db.Sequelize.col("Rack.IdRack")
+                    ),
                 },
-                where: { FechaConteo: fechaConteo },
                 attributes: [
-                    [db.Sequelize.literal(`ROUND((SUM(CajasFisico) / Posicion.Capacidad) * 8, 2)`), 'Completeness']
-                ]
+                    [
+                        db.Sequelize.literal(`ROUND(((SUM(Conteo.CajasFisico) / Rack.Capacidad) * 8) / 10, 0)`),
+                        'Completeness'
+                    ]
+                ],
+                raw: true
             });
     
             res.status(200).json(completeness[0]);
         } catch (error) {
-            console.log(error);
+            console.error(error);
             res.status(500).send("Internal server error: " + error);
         }
     }
 
-    // Function to get the number of incidences
+    // Function to get the number of incidences (2° filter)
     private async getNumberOfIncidences(req: Request, res: Response) {
     try {
         const { ubi, fechaConteo } = req.params;
