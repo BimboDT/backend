@@ -4,24 +4,26 @@
 // {IMPORTS}
 import { Model } from 'sequelize';
 
-// Enum for the location of racks
-enum RackLocations {
-    Reserva1 = 'Reserva1',
-    Reserva2 = 'Reserva2',
-    Outbound = 'Outbound',
-    Picking = 'Picking',
-    Packing = 'Packing',
-    Inbound = 'Inbound',
+// Enum for the name of racks
+enum RackNames {
+    A = 'A',
+    B = 'B',
+    C = 'C',
+    D = 'D',
+    E = 'E',
+    F = 'F',
+    G = 'G',
+    H = 'H',
+    I = 'I',
+    J = 'J',
+    K = 'K',
+    L = 'L',   
 }
 
 // Interface for the Rack Model
 interface RackAttributes {
-    IdRack: number;
-    Ubicacion: RackLocations;
-    Pasillo: string;
-    Profundidad: number;
+    IdRack: RackNames;
     Capacidad: number;
-    Afectado: boolean;
 }
 
 // Define the Rack Model, for the Sequelize ORM, representing a rack in a warehouse in the database
@@ -31,12 +33,8 @@ module.exports = (sequelize: any, DataTypes: any) => {
         implements RackAttributes 
     {
         // Attributes are enforced by the RackAttributes interface
-        public IdRack!: number;
-        public Ubicacion!: RackLocations;
-        public Pasillo!: string;
-        public Profundidad!: number;
+        public IdRack!: RackNames;
         public Capacidad!: number;
-        public Afectado!: boolean;
     }
 
     // Initializes the Rack model with its attributes and options
@@ -47,32 +45,16 @@ module.exports = (sequelize: any, DataTypes: any) => {
                 allowNull: false,
                 primaryKey: true,
             },
-            Ubicacion: {
-                type: DataTypes.ENUM,
-                values: Object.values(RackLocations),
-                allowNull: false,
-            },
-            Pasillo: {
-                type: DataTypes.STRING,
-                allowNull: false,
-            },
-            Profundidad: {
-                type: DataTypes.INTEGER,
-                allowNull: false,
-            },
             Capacidad: {
                 type: DataTypes.INTEGER,
                 allowNull: false,
             },
-            Afectado: {
-                type: DataTypes.BOOLEAN,
-                allowNull: false,
-            },
-        }, 
+        },
         {
             sequelize,
-            modelName: 'Rack', // Name of the table in the database
+            modelName: 'Rack',
         }
     );
+
     return Rack;
-}
+};

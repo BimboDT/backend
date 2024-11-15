@@ -70,3 +70,44 @@ INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, D
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (35, '2024-11-08', '2024-11-03', 350, 340, 0, 'B040603', 8, 108);
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (40, '2024-11-09', '2024-11-03', 400, 395, 0, 'B040603', 9, 109);
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (50, '2024-11-10', '2024-11-03', 500, 490, 0, 'B040603', 10, 110);
+
+
+SELECT  ROUND((SUM(CajasFisico) / Rack.Capacidad) * 8, 2) AS Completeness
+FROM Conteo
+JOIN Rack ON Conteo.IdRack = Rack.IdRack
+WHERE 
+    Rack.Ubicacion = 'Outbound' 
+    AND Conteo.FechaConteo = '2024-10-10';
+
+
+
+SELECT COUNT(*) AS Incidencias
+FROM Conteo
+JOIN 
+    Rack ON Conteo.IdRack = Rack.IdRack
+WHERE 
+    Rack.Ubicacion = 'Outbound' 
+    AND Conteo.FechaConteo = '2024-10-10'
+    AND Conteo.CajasSistema <> Conteo.CajasFisico;
+
+
+
+SELECT SUM(Pallets) AS TotalPallets
+FROM Conteo
+JOIN 
+    Rack ON Conteo.IdRack = Rack.IdRack
+WHERE 
+    Rack.Ubicacion = 'Outbound' 
+    AND Conteo.FechaConteo = '2024-10-10';
+
+
+
+SELECT 
+    ROUND((SUM(CajasFisico) / Rack.Capacidad) * 8, 2) AS Completeness
+FROM 
+    Conteo
+JOIN 
+    Rack ON Conteo.IdRack = Rack.IdRack
+WHERE 
+    Rack.Ubicacion = 'Outbound' 
+    AND Conteo.FechaConteo = '2024-10-10';
