@@ -5,6 +5,7 @@
 import { Request, Response } from "express";
 import AbstractController from "./AbstractController";
 import db from "../models";
+import { Model } from "sequelize";
 
 // Define the ConteoController class
 class ConteoController extends AbstractController {
@@ -34,6 +35,8 @@ class ConteoController extends AbstractController {
         // Web App endpoints
         this.router.get("/numeroRacks", this.getRackCompleteness.bind(this));
         this.router.get("/numeroIncidencias", this.getNumberOfIncidences.bind(this));
+        this.router.get("/productoDeUbicacion/:ubi", this.getProductByLocation.bind(this));
+        this.router.get("/descripcionProducto/:prod", this.getDescriptionByName.bind(this));
 
     }
 
@@ -163,9 +166,9 @@ class ConteoController extends AbstractController {
             });
     
             res.status(200).json(completeness[0]);
-        } catch (error) {
-            console.log(error);
-            res.status(500).send("Internal server error: " + error);
+        } catch (err) {
+            console.log(err);
+            res.status(500).send("Internal server error: " + err);
         }
     }
 
@@ -191,7 +194,71 @@ class ConteoController extends AbstractController {
         console.log(error);
         res.status(500).send("Internal server error: " + error);
     }
-}
+
+    }
+
+    private async getProductByLocation(req: Request, res: Response) {
+        try {
+            const { ubi } = req.params;
+        
+            const conteos = await db.Conteo.findAll({
+                include: {
+                    model: db.Posicion,
+                    as: 'Posicion',
+                    where: { Ubicacion: ubi },
+                    attributes: ['Ubicacion'] 
+                },
+                attributes: ['IdProducto']
+            });
+        
+            const productosIds = conteos.map((conteo: any) => conteo.IdProducto);
+        
+            const productos = await db.Producto.findAll({
+                where: { IdProducto: productosIds },
+                attributes: ['IdProducto', 'Nombre']
+            });
+        
+            const resultado = conteos.map((conteo: any) => {
+                const producto = productos.find((p: any) => p.IdProducto === conteo.IdProducto);
+                return {
+                    Ubicacion: conteo.Posicion.Ubicacion,
+                    Nombre: producto ? producto.Nombre : "Producto no encontrado"
+                };
+            });
+        
+            res.status(200).json(resultado);
+        
+        } catch (error) {
+            console.log(error);
+            res.status(500).send("Internal server error: " + error);
+        }
+        
+    }
+
+    private async getDescriptionByName(req: Request, res: Response) {
+
+        try {
+            const { prod } = req.params;
+
+            const producto = await db.Producto.findOne({
+                where: {Nombre: prod},
+                attributes: ['Descripcion']
+            })
+            
+            if (producto) {
+                // res.status(200).json(producto["Descripcion"]);
+                res.status(200).json(producto);
+
+            } else {
+                res.status(404).send("El empleado no existe");
+            }
+
+        } catch (err) {
+            console.log(err);
+            res.status(500).send("Internal server error: " + err);
+        }
+
+    }
 
 
 }
