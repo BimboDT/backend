@@ -32,7 +32,8 @@ class ConteoController extends AbstractController {
         this.router.put("/actualizarConteo", this.putCycleCounting.bind(this));
 
         // Web App endpoints
-        
+        this.router.get("/numeroRacks", this.getRackCompleteness.bind(this));
+        this.router.get("/numeroIncidencias", this.getNumberOfIncidences.bind(this));
 
     }
 
@@ -109,8 +110,8 @@ class ConteoController extends AbstractController {
 
             const totalCajas = await db.Conteo.findAll({
                 include: {
-                    model: db.Rack,
-                    as: 'Rack',
+                    model: db.Posicion,
+                    as: 'Posicion',
                     where: { Ubicacion: ubi },
                     attributes: [],
                 },
@@ -125,12 +126,12 @@ class ConteoController extends AbstractController {
 
     private async putCycleCounting(req: Request, res: Response) {
         try {
-            const { IdRack, numEmp, valorNuevo } = req.body;
+            const { IdPos, numEmp, valorNuevo } = req.body;
 
             await db.Conteo.update(
                 { CajasFisico: valorNuevo },
                 { where: { 
-                    IdRack: IdRack,
+                    IdPos: IdPos,
                     NumEmpleado: numEmp 
                     }
                 }
@@ -142,6 +143,55 @@ class ConteoController extends AbstractController {
             res.status(500).send("Internal server error: " + err);
         }
     }
+
+    // CHECARLO
+    private async getRackCompleteness(req: Request, res: Response) {
+        try {
+            const { ubi, fechaConteo } = req.params;
+    
+            const completeness = await db.Conteo.findAll({
+                include: {
+                    model: db.Posicion,
+                    as: 'Posicion',
+                    where: { Ubicacion: ubi },
+                    attributes: ['Capacidad']
+                },
+                where: { FechaConteo: fechaConteo },
+                attributes: [
+                    [db.Sequelize.literal(`ROUND((SUM(CajasFisico) / Posicion.Capacidad) * 8, 2)`), 'Completeness']
+                ]
+            });
+    
+            res.status(200).json(completeness[0]);
+        } catch (error) {
+            console.log(error);
+            res.status(500).send("Internal server error: " + error);
+        }
+    }
+
+    // Function to get the number of incidences
+    private async getNumberOfIncidences(req: Request, res: Response) {
+    try {
+        const { ubi, fechaConteo } = req.params;
+
+        const incidencias = await db.Conteo.count({
+            include: {
+                model: db.Posicion,
+                as: 'Posicion',
+                where: { Ubicacion: ubi }
+            },
+            where: {
+                FechaConteo: fechaConteo,
+                CajasSistema: { [db.Sequelize.Op.ne]: db.Sequelize.col('CajasFisico') }
+            }
+        });
+
+        res.status(200).json({ Incidencias: incidencias });
+    } catch (error) {
+        console.log(error);
+        res.status(500).send("Internal server error: " + error);
+    }
+}
 
 
 }

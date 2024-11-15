@@ -32,6 +32,10 @@ module.exports = (sequelize: any, DataTypes: any) => {
 
         // Associates the Conteo model with other models
         static associate(models: any) {
+            Conteo.belongsTo(models.Posicion, {
+                foreignKey: "IdPos",
+                as: "Posicion",
+            });
             Conteo.belongsTo(models.Rack, {
                 foreignKey: "IdRack",
                 as: "Rack",

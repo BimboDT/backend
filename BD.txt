@@ -11,17 +11,32 @@ INSERT INTO Empleado VALUES (109, 'José Morales');
 INSERT INTO Empleado VALUES (110, 'Marta Vázquez');
 
 
+-- Datos para la tabla Posicion
+INSERT INTO Posicion VALUES ('F101502', 'Outbound', 'A1', 7, false);
+INSERT INTO Posicion VALUES ('K152603', 'Inbound', 'B2', 5, false);
+INSERT INTO Posicion VALUES ('D041601', 'Picking', 'C3', 2, true);
+INSERT INTO Posicion VALUES ('A051902', 'Packing', 'D4', 3, false);
+INSERT INTO Posicion VALUES ('B040603', 'Reserva1', 'E5', 1, false);
+INSERT INTO Posicion VALUES ('M072101', 'Reserva2', 'F6', 4, true);
+INSERT INTO Posicion VALUES ('G083102', 'Outbound', 'G7', 5, false);
+INSERT INTO Posicion VALUES ('K270301', 'Inbound', 'H8', 6, false);
+INSERT INTO Posicion VALUES ('G021302', 'Picking', 'I9', 7, true);
+INSERT INTO Posicion VALUES ('A042201', 'Packing', 'J10', 1, false);
+
+
 -- Datos para la tabla Rack
-INSERT INTO Rack VALUES ('F101502', 'Outbound', 'A1', 7, 50, false);
-INSERT INTO Rack VALUES ('K152603', 'Inbound', 'B2', 5, 70, false);
-INSERT INTO Rack VALUES ('D041601', 'Picking', 'C3', 2, 80, true);
-INSERT INTO Rack VALUES ('A051902', 'Packing', 'D4', 3, 60, false);
-INSERT INTO Rack VALUES ('B040603', 'Reserva1', 'E5', 1, 55, false);
-INSERT INTO Rack VALUES ('M072101', 'Reserva2', 'F6', 4, 65, true);
-INSERT INTO Rack VALUES ('G083102', 'Outbound', 'G7', 5, 45, false);
-INSERT INTO Rack VALUES ('K270301', 'Inbound', 'H8', 6, 70, false);
-INSERT INTO Rack VALUES ('G021302', 'Picking', 'I9', 7, 90, true);
-INSERT INTO Rack VALUES ('A042201', 'Packing', 'J10', 1, 95, false);
+INSERT INTO Rack VALUES ('A', 500);
+INSERT INTO Rack VALUES ('B', 500);
+INSERT INTO Rack VALUES ('C', 500);
+INSERT INTO Rack VALUES ('D', 500);
+INSERT INTO Rack VALUES ('E', 500);
+INSERT INTO Rack VALUES ('F', 500);
+INSERT INTO Rack VALUES ('G', 500);
+INSERT INTO Rack VALUES ('H', 500);
+INSERT INTO Rack VALUES ('I', 500);
+INSERT INTO Rack VALUES ('J', 500);
+INSERT INTO Rack VALUES ('K', 500);
+INSERT INTO Rack VALUES ('L', 500);
 
 -- Datos para la tabla Imagen
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Outbound', 'Real', 'https://example.com/image1.jpg', '2024-11-01 ');
@@ -60,13 +75,54 @@ INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 9);
 INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 10);
 
 -- Datos para la tabla Conteo
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-01', '2024-10-10', 100, 95, 0, 'F101502', 1, 101);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-02', '2024-10-10', 200, 190, 0, 'F101502', 2, 102);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-03', '2024-10-10', 150, 150, 0, 'F101502', 3, 103);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (18, '2024-11-04', '2024-10-10', 180, 170, 0, 'K270301', 4, 104);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-05', '2024-10-10', 120, 115, 0, 'K270301', 5, 105);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-06', '2024-11-03', 250, 240, 0, 'K270301', 6, 106);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-07', '2024-11-03', 300, 290, 0, 'B040603', 7, 107);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (35, '2024-11-08', '2024-11-03', 350, 340, 0, 'B040603', 8, 108);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (40, '2024-11-09', '2024-11-03', 400, 395, 0, 'B040603', 9, 109);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdRack, IdProducto, NumEmpleado) VALUES (50, '2024-11-10', '2024-11-03', 500, 490, 0, 'B040603', 10, 110);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-01', '2024-10-10', 100, 95, 0, 'F101502', 'F', 1, 101);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-02', '2024-10-10', 200, 190, 0, 'F101502','F', 2, 102);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-03', '2024-10-10', 150, 150, 0, 'F101502', 'F', 3, 103);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (18, '2024-11-04', '2024-10-10', 180, 170, 0, 'K270301', 'K', 4, 104);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-05', '2024-10-10', 120, 115, 0, 'K270301', 'K', 5, 105);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-06', '2024-11-03', 250, 240, 0, 'K270301', 'K', 6, 106);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-07', '2024-11-03', 300, 290, 0, 'B040603', 'B', 7, 107);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (35, '2024-11-08', '2024-11-03', 350, 340, 0, 'B040603', 'B', 8, 108);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (40, '2024-11-09', '2024-11-03', 400, 395, 0, 'B040603', 'B', 9, 109);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (50, '2024-11-10', '2024-11-03', 500, 490, 0, 'B040603', 'B', 10, 110);
+
+
+SELECT  ROUND((SUM(CajasFisico) / Rack.Capacidad) * 8, 2) AS Completeness
+FROM Conteo
+JOIN Rack ON Conteo.IdRack = Rack.IdRack
+WHERE 
+    Rack.Ubicacion = 'Outbound' 
+    AND Conteo.FechaConteo = '2024-10-10';
+
+
+
+SELECT COUNT(*) AS Incidencias
+FROM Conteo
+JOIN 
+    Rack ON Conteo.IdRack = Rack.IdRack
+WHERE 
+    Rack.Ubicacion = 'Outbound' 
+    AND Conteo.FechaConteo = '2024-10-10'
+    AND Conteo.CajasSistema <> Conteo.CajasFisico;
+
+
+
+SELECT SUM(Pallets) AS TotalPallets
+FROM Conteo
+JOIN 
+    Rack ON Conteo.IdRack = Rack.IdRack
+WHERE 
+    Rack.Ubicacion = 'Outbound' 
+    AND Conteo.FechaConteo = '2024-10-10';
+
+
+
+SELECT 
+    ROUND((SUM(CajasFisico) / Rack.Capacidad) * 8, 2) AS Completeness
+FROM 
+    Conteo
+JOIN 
+    Rack ON Conteo.IdRack = Rack.IdRack
+WHERE 
+    Rack.Ubicacion = 'Outbound' 
+    AND Conteo.FechaConteo = '2024-10-10';

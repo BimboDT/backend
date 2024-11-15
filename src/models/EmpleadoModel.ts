@@ -4,24 +4,24 @@
 // {IMPORTS}
 import { Model } from 'sequelize';
 
-// Interface for the Usuario Model
+// Interface for the Empleado Model
 interface EmpleadoAttributes {
     NumEmpleado: number;
     Nombre: string;
 }
 
-// Define the Usuario Model, for the Sequelize ORM, representing an employee in the database
+// Define the Empleado Model, for the Sequelize ORM, representing an employee in the database
 module.exports = (sequelize: any, DataTypes: any) => {
     class Empleado 
         extends Model<EmpleadoAttributes> 
         implements EmpleadoAttributes 
     {
-        // Attributes are enforced by the UsuarioAttributes interface
+        // Attributes are enforced by the EmpleadoAttributes interface
         public NumEmpleado!: number;
         public Nombre!: string;
     }
 
-    // Initializes the Usuario model with its attributes and options
+    // Initializes the Empleado model with its attributes and options
     Empleado.init(
         {
             NumEmpleado: {
