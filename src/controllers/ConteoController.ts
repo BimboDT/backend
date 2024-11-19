@@ -5,7 +5,7 @@
 import { Request, Response } from "express";
 import AbstractController from "./AbstractController";
 import db from "../models";
-import { Model } from "sequelize";
+import { Model, Sequelize } from "sequelize";
 
 // Define the ConteoController class
 class ConteoController extends AbstractController {
@@ -37,6 +37,8 @@ class ConteoController extends AbstractController {
         this.router.get("/numeroIncidencias", this.getNumberOfIncidences.bind(this));
         this.router.get("/productoDeUbicacion/:ubi", this.getProductByLocation.bind(this));
         this.router.get("/descripcionProducto/:prod", this.getDescriptionByName.bind(this));
+        this.router.get("/incidenciasPorMes/:mes", this.getIncidenciaByMonth.bind(this));
+        this.router.get("/productoMasDiscrepancia", this.getMostDiscrepancyProduct.bind(this));
 
     }
 
@@ -174,26 +176,27 @@ class ConteoController extends AbstractController {
 
     // Function to get the number of incidences
     private async getNumberOfIncidences(req: Request, res: Response) {
-    try {
-        const { ubi, fechaConteo } = req.params;
+        try {
+            const { ubi, fechaConteo } = req.params;
 
-        const incidencias = await db.Conteo.count({
-            include: {
-                model: db.Posicion,
-                as: 'Posicion',
-                where: { Ubicacion: ubi }
-            },
-            where: {
-                FechaConteo: fechaConteo,
-                CajasSistema: { [db.Sequelize.Op.ne]: db.Sequelize.col('CajasFisico') }
-            }
-        });
+            const incidencias = await db.Conteo.count({
+                include: {
+                    model: db.Posicion,
+                    as: 'Posicion',
+                    where: { Ubicacion: ubi }
+                },
+                where: {
+                    FechaConteo: fechaConteo,
+                    CajasSistema: { [db.Sequelize.Op.ne]: db.Sequelize.col('CajasFisico') }
+                }
+            });
+            
+            res.status(200).json({ Incidencias: incidencias });
 
-        res.status(200).json({ Incidencias: incidencias });
-    } catch (error) {
-        console.log(error);
-        res.status(500).send("Internal server error: " + error);
-    }
+        } catch (error) {
+            console.log(error);
+            res.status(500).send("Internal server error: " + error);
+        }
 
     }
 
@@ -236,7 +239,6 @@ class ConteoController extends AbstractController {
     }
 
     private async getDescriptionByName(req: Request, res: Response) {
-
         try {
             const { prod } = req.params;
 
@@ -258,6 +260,46 @@ class ConteoController extends AbstractController {
             res.status(500).send("Internal server error: " + err);
         }
 
+    }
+
+    private async getIncidenciaByMonth(req: Request, res: Response) {
+        try {
+            const { mes } = req.params;
+
+            const fechaInicio = new Date(mes);
+
+            const anio = fechaInicio.getFullYear();
+            const mesNumero = fechaInicio.getMonth() + 1; // Mes en JavaScript es 0-indexado
+
+            const conteos = await db.Conteo.findAll({
+                where: Sequelize.and(
+                    Sequelize.where(Sequelize.fn("YEAR", Sequelize.col("FechaConteo")), anio),
+                    Sequelize.where(Sequelize.fn("MONTH", Sequelize.col("FechaConteo")), mesNumero)
+                )
+            });
+
+            const incidencias = conteos.reduce((count: any, conteo: any) => {
+                return conteo.CajasSistema !== conteo.CajasFisico ? count + 1 : count;
+            }, 0);
+
+            res.status(200).json({ incidencias });
+
+        } catch (error: any) {
+            console.log(error);
+            res.status(500).send("Internal server error: " + error);
+        }
+    }
+
+    private async getMostDiscrepancyProduct(req: Request, res: Response) {
+        try {
+            const conteos = await db.Conteo.findAll()
+
+            res.status(200).json(conteos);
+
+        } catch (error: any) {
+            console.log(error);
+            res.status(500).send("Internal server error: " + error);
+        }
     }
 
 
