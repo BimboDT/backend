@@ -196,7 +196,7 @@ class ConteoController extends AbstractController {
 
     // Function to get the number of incidences (2° filter)
     private async getNumberOfIncidences(req: Request, res: Response) {
-            try {
+        try {
                 const { ubi, fechaConteo } = req.params;
 
         const incidencias = await db.Conteo.count({
@@ -212,49 +212,47 @@ class ConteoController extends AbstractController {
         });
 
         res.status(200).json({ Incidencias: incidencias });
-    } catch (error) {
-        console.log(error);
-        res.status(500).send("Internal server error: " + error);
+        } catch (error) {
+            console.log(error);
+            res.status(500).send("Internal server error: " + error);
+        }
     }
-}
-
-private async getProductByLocation(req: Request, res: Response) {
-    try {
-        const { ubi } = req.params;
+    private async getProductByLocation(req: Request, res: Response) {
+        try {
+            const { ubi } = req.params;
+        
+            const conteos = await db.Conteo.findAll({
+                include: {
+                    model: db.Posicion,
+                    as: 'Posicion',
+                    where: { Ubicacion: ubi },
+                    attributes: ['Ubicacion'] 
+                },
+                attributes: ['IdProducto']
+            });
+        
+            const productosIds = conteos.map((conteo: any) => conteo.IdProducto);
+        
+            const productos = await db.Producto.findAll({
+                where: { IdProducto: productosIds },
+                attributes: ['IdProducto', 'Nombre']
+            });
+        
+            const resultado = conteos.map((conteo: any) => {
+                const producto = productos.find((p: any) => p.IdProducto === conteo.IdProducto);
+                return {
+                    Ubicacion: conteo.Posicion.Ubicacion,
+                    Nombre: producto ? producto.Nombre : "Producto no encontrado"
+                };
+            });
+        
+            res.status(200).json(resultado);
     
-        const conteos = await db.Conteo.findAll({
-            include: {
-                model: db.Posicion,
-                as: 'Posicion',
-                where: { Ubicacion: ubi },
-                attributes: ['Ubicacion'] 
-            },
-            attributes: ['IdProducto']
-        });
-    
-        const productosIds = conteos.map((conteo: any) => conteo.IdProducto);
-    
-        const productos = await db.Producto.findAll({
-            where: { IdProducto: productosIds },
-            attributes: ['IdProducto', 'Nombre']
-        });
-    
-        const resultado = conteos.map((conteo: any) => {
-            const producto = productos.find((p: any) => p.IdProducto === conteo.IdProducto);
-            return {
-                Ubicacion: conteo.Posicion.Ubicacion,
-                Nombre: producto ? producto.Nombre : "Producto no encontrado"
-            };
-        });
-    
-        res.status(200).json(resultado);
-    
-    } catch (error) {
-        console.log(error);
-        res.status(500).send("Internal server error: " + error);
+        } catch (error) {
+            console.log(error);
+            res.status(500).send("Internal server error: " + error);
+        }
     }
-    
-}
 
     private async getNumberOfCycleCountings(req: Request, res: Response) {
         try {
@@ -389,8 +387,6 @@ private async getProductByLocation(req: Request, res: Response) {
             res.status(500).send("Internal server error: " + error);
         }
     }
-
-
 }
 
 export default ConteoController;
