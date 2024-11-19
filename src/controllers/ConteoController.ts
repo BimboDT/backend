@@ -5,7 +5,7 @@
 import { Request, Response } from "express";
 import AbstractController from "./AbstractController";
 import db from "../models";
-import { Model, Sequelize } from "sequelize";
+import { Op, Model, Sequelize } from "sequelize";
 
 // Define the ConteoController class
 class ConteoController extends AbstractController {
@@ -292,16 +292,40 @@ class ConteoController extends AbstractController {
 
     private async getMostDiscrepancyProduct(req: Request, res: Response) {
         try {
-            const conteos = await db.Conteo.findAll()
+            // Obtener las incidencias agrupadas por producto
+            const productosConIncidencias = await db.Conteo.findAll({
+                attributes: [
+                    "IdProducto",
+                    [Sequelize.fn("COUNT", Sequelize.col("IdProducto")), "TotalIncidencias"]
+                ],
+                where: {
+                    CajasSistema: { [Op.ne]: Sequelize.col("CajasFisico") }
+                },
+                group: ["IdProducto"],
+                order: [[Sequelize.literal("TotalIncidencias"), "DESC"]], 
+                limit: 1 
+            });
 
-            res.status(200).json(conteos);
+            // Verificar si se encontraron resultados
+            if (productosConIncidencias.length === 0) {
+                res.status(404).send("No se encontraron incidencias.");
+            }
 
+            const productoConMasIncidencias = productosConIncidencias[0];
+            const { IdProducto, TotalIncidencias } = productoConMasIncidencias.get();
+
+            // Responder con el resultado
+            res.status(200).json({ IdProducto, TotalIncidencias });
+
+            // Obtener todos los conteos
+            // const conteos = await db.Conteo.findAll();
+            // res.status(200).json(conteos);
+            
         } catch (error: any) {
             console.log(error);
             res.status(500).send("Internal server error: " + error);
         }
     }
-
 
 }
 
