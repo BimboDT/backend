@@ -84,3 +84,24 @@ INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, D
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (35, '2024-11-08', '2024-11-03', 350, 340, 0, 'B040603', 'B', 8, 108);
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (40, '2024-11-09', '2024-11-03', 400, 395, 0, 'B040603', 'B', 9, 109);
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (50, '2024-11-10', '2024-11-03', 500, 490, 0, 'B040603', 'B', 10, 110);
+
+
+Si al registro de diferencias
+Pallets: 0 - 126
+
+
+Reserva1: M, N, O
+Posicion: 24
+Profundidad: 22
+
+
+
+Reserva2: A - L
+Posicion: 18
+Profundidad: 7
+
+
+Outbound: P, Q, R, S, T, U
+Inbound: 
+
+Posicion: 18

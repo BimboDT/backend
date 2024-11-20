@@ -106,7 +106,7 @@ class ConteoController extends AbstractController {
             await db.Conteo.create(req.body);
 
             console.log("Reporte de conteo creado exitosamente");
-            res.status(201).send("<h1>Reporte creado</h1>");
+            res.status(201).send("Reporte creado");
         } catch (err) {
             console.log(err);
             res.status(500).send("Internal server error: " + err);
@@ -165,7 +165,7 @@ class ConteoController extends AbstractController {
                     {
                         model: db.Rack,
                         as: 'Rack',
-                        attributes: ['IdRack', 'Capacidad'],
+                        attributes: [],
                     },
                     {
                         model: db.Posicion,
@@ -182,10 +182,14 @@ class ConteoController extends AbstractController {
                     ),
                 },
                 attributes: [
-                    'Rack.IdRack', // Devuelve el ID del Rack
+                    [db.Sequelize.col('Rack.IdRack'), 'IdRack'], // Devuelve el ID del Rack
                     [
                         db.Sequelize.literal(`ROUND(((SUM(Conteo.CajasFisico) / Rack.Capacidad) * 8) / 10, 0)`),
                         'Completeness',
+                    ],
+                    [
+                        db.Sequelize.literal(`SUM(Conteo.CajasFisico)`),
+                        'TotalCajasFisico',
                     ],
                 ],
                 group: ['Rack.IdRack', 'Rack.Capacidad'], // Agrupa por Rack y su capacidad
@@ -194,7 +198,7 @@ class ConteoController extends AbstractController {
     
             res.status(200).json(completeness);
         } catch (err) {
-            console.error(err);
+            console.log(err);
             res.status(500).send("Internal server error: " + err);
         }
     }
@@ -255,7 +259,7 @@ class ConteoController extends AbstractController {
                     ),
                 },
                 attributes: [
-                    'Rack.IdRack', // Identificar Rack
+                    [db.Sequelize.col('Rack.IdRack'), 'IdRack'], // Identificar Rack
                     [
                         // Total de posiciones para cada rack (conteos cíclicos esperados)
                         db.Sequelize.literal(`
@@ -292,7 +296,7 @@ class ConteoController extends AbstractController {
     
             res.status(200).json(cycleCountings);
         } catch (error) {
-            console.error(error);
+            console.log(error);
             res.status(500).send("Internal server error: " + error);
         }
     }
