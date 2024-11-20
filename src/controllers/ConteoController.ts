@@ -40,6 +40,8 @@ class ConteoController extends AbstractController {
         this.router.get("/descripcionProducto/:prod", this.getDescriptionByName.bind(this));
         this.router.get("/incidenciasPorMes/:mes", this.getIncidenciaByMonth.bind(this));
         this.router.get("/productoMasDiscrepancia", this.getMostDiscrepancyProduct.bind(this));
+        this.router.get("/porcentajeAlmacen", this.getWarehouseCompleteness.bind(this));
+        this.router.get("/top10Productos", this.getTop10Products.bind(this));
 
     }
 
@@ -340,9 +342,9 @@ class ConteoController extends AbstractController {
                 res.status(404).send("El empleado no existe");
             }
 
-        } catch (err) {
-            console.log(err);
-            res.status(500).send("Internal server error: " + err);
+        } catch (error) {
+            console.log(error);
+            res.status(500).send("Internal server error: " + error);
         }
 
     }
@@ -402,13 +404,77 @@ class ConteoController extends AbstractController {
 
             // Responder con el resultado
             res.status(200).json({ IdProducto, TotalIncidencias });
-
-            // Obtener todos los conteos
-            // const conteos = await db.Conteo.findAll();
-            // res.status(200).json(conteos);
             
         } catch (error: any) {
             console.log(error);
+            res.status(500).send("Internal server error: " + error);
+        }
+    }
+
+    private async getWarehouseCompleteness(req: Request, res: Response) {
+        try {
+            const totalCapacityResult = await db.Rack.findAll({
+                attributes: [
+                    [db.Sequelize.fn("SUM", db.Sequelize.col("Capacidad")), "TotalCapacity"]
+                ],
+                raw: true,
+            });
+    
+            const totalCapacity = totalCapacityResult[0].TotalCapacity;
+    
+            const totalCajasFisicoResult = await db.Conteo.findAll({
+                attributes: [
+                    [db.Sequelize.fn("SUM", db.Sequelize.col("CajasFisico")), "TotalCajasFisico"]
+                ],
+                raw: true,
+            });
+    
+            const totalCajasFisico = totalCajasFisicoResult[0].TotalCajasFisico;
+
+            res.status(200).json({
+                capacidadTotal: totalCapacity,
+                ocupacionActual: totalCajasFisico
+            });
+
+        } catch (error) {
+            console.error(error);
+            res.status(500).send("Internal server error: " + error);
+        }
+    }
+
+    private async getTop10Products(req: Request, res: Response) { 
+        try {
+            const top10Products = await db.Conteo.findAll({
+                attributes: [
+                    "IdProducto",
+                    [Sequelize.fn("SUM", Sequelize.col("CajasFisico")), "TotalCajasFisico"]
+                ],
+                group: ["IdProducto"],
+                order: [[Sequelize.literal("TotalCajasFisico"), "DESC"]],
+                limit: 10,
+                raw: true 
+            });
+            
+            const productIds = top10Products.map((product: any) => product.IdProducto);
+            
+            const productNames = await db.Producto.findAll({
+                where: { IdProducto: productIds },
+                attributes: ["IdProducto", "Nombre"],
+                raw: true 
+            });
+            
+            const formattedResults = top10Products.map((product: any) => {
+                const productName = productNames.find((p: any) => p.IdProducto === product.IdProducto)?.Nombre || "Sin nombre";
+                return {
+                    nombreProducto: productName,
+                    totalCajasFisico: product.TotalCajasFisico
+                };
+            });
+            
+            res.status(200).json(formattedResults);
+            
+        } catch (error: any) { 
+            console.error(error);
             res.status(500).send("Internal server error: " + error);
         }
     }
