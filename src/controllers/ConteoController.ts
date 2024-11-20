@@ -1,11 +1,12 @@
 // Authors:
 // * Alfredo Azamar López - A01798100
+// * Abner Maximiliano Lecona Nieves - A01753179
 
 // {IMPORTS}
 import { Request, Response } from "express";
 import AbstractController from "./AbstractController";
 import db from "../models";
-import { Op, Model, Sequelize } from "sequelize";
+import { Op, Sequelize } from "sequelize";
 
 // Define the ConteoController class
 class ConteoController extends AbstractController {
@@ -78,7 +79,9 @@ class ConteoController extends AbstractController {
 
     private async getCycleCounting(req: Request, res: Response) {
         try {
-            const { fecha } = req.params;
+            let { fecha } = req.params;
+
+            fecha = new Date(fecha).toISOString(); // Convertir a formato ISO
 
             const conteo = await db.Conteo.findAll({
                 where: { FechaConteo: fecha },
@@ -154,13 +157,15 @@ class ConteoController extends AbstractController {
     private async getRackCompleteness(req: Request, res: Response) {
         try {
             const { ubi, fechaConteo } = req.params;
+
+            const fechaISO = new Date(fechaConteo).toISOString(); // Convertir a formato ISO
     
             const completeness = await db.Conteo.findAll({
                 include: [
                     {
                         model: db.Rack,
                         as: 'Rack',
-                        attributes: ['IdRack', 'Capacidad'], // Asegúrate de incluir estos atributos
+                        attributes: ['IdRack', 'Capacidad'],
                     },
                     {
                         model: db.Posicion,
@@ -170,7 +175,7 @@ class ConteoController extends AbstractController {
                     },
                 ],
                 where: {
-                    FechaConteo: fechaConteo,
+                    FechaConteo: fechaISO,
                     [Op.and]: db.Sequelize.where(
                         db.Sequelize.literal(`SUBSTRING(Conteo.IdPos, 1, 1)`),
                         db.Sequelize.col("Rack.IdRack")
@@ -197,66 +202,35 @@ class ConteoController extends AbstractController {
     // Function to get the number of incidences (2° filter)
     private async getNumberOfIncidences(req: Request, res: Response) {
         try {
-                const { ubi, fechaConteo } = req.params;
+            const { ubi, fechaConteo } = req.params;
 
-        const incidencias = await db.Conteo.count({
-            include: {
-                model: db.Posicion,
-                as: 'Posicion',
-                where: { Ubicacion: ubi }
-            },
-            where: {
-                FechaConteo: fechaConteo,
-                CajasSistema: { [db.Sequelize.Op.ne]: db.Sequelize.col('CajasFisico') }
-            }
-        });
-
-        res.status(200).json({ Incidencias: incidencias });
-        } catch (error) {
-            console.log(error);
-            res.status(500).send("Internal server error: " + error);
-        }
-    }
-    private async getProductByLocation(req: Request, res: Response) {
-        try {
-            const { ubi } = req.params;
-        
-            const conteos = await db.Conteo.findAll({
+            const fechaISO = new Date(fechaConteo).toISOString(); // Convertir a formato ISO
+            
+            const incidencias = await db.Conteo.count({
                 include: {
                     model: db.Posicion,
                     as: 'Posicion',
-                    where: { Ubicacion: ubi },
-                    attributes: ['Ubicacion'] 
+                    where: { Ubicacion: ubi }
                 },
-                attributes: ['IdProducto']
+                where: {
+                    FechaConteo: fechaISO,
+                    CajasSistema: { [db.Sequelize.Op.ne]: db.Sequelize.col('CajasFisico') }
+                }
             });
-        
-            const productosIds = conteos.map((conteo: any) => conteo.IdProducto);
-        
-            const productos = await db.Producto.findAll({
-                where: { IdProducto: productosIds },
-                attributes: ['IdProducto', 'Nombre']
-            });
-        
-            const resultado = conteos.map((conteo: any) => {
-                const producto = productos.find((p: any) => p.IdProducto === conteo.IdProducto);
-                return {
-                    Ubicacion: conteo.Posicion.Ubicacion,
-                    Nombre: producto ? producto.Nombre : "Producto no encontrado"
-                };
-            });
-        
-            res.status(200).json(resultado);
-    
+            
+            res.status(200).json({ Incidencias: incidencias });
         } catch (error) {
             console.log(error);
             res.status(500).send("Internal server error: " + error);
         }
     }
-
+    
+    // Function to get the number of cycle countings (3° filter)
     private async getNumberOfCycleCountings(req: Request, res: Response) {
         try {
             const { ubi, fechaConteo } = req.params;
+
+            const fechaISO = new Date(fechaConteo).toISOString(); // Convertir a formato ISO
     
             // Obtener los racks dentro de la ubicación especificada
             const cycleCountings = await db.Conteo.findAll({
@@ -274,7 +248,7 @@ class ConteoController extends AbstractController {
                     },
                 ],
                 where: {
-                    FechaConteo: fechaConteo,
+                    FechaConteo: fechaISO,
                     [Op.and]: db.Sequelize.where(
                         db.Sequelize.literal(`SUBSTRING(Conteo.IdPos, 1, 1)`),
                         db.Sequelize.col("Rack.IdRack")
@@ -322,6 +296,45 @@ class ConteoController extends AbstractController {
             res.status(500).send("Internal server error: " + error);
         }
     }
+
+    
+    private async getProductByLocation(req: Request, res: Response) {
+        try {
+            const { ubi } = req.params;
+        
+            const conteos = await db.Conteo.findAll({
+                include: {
+                    model: db.Posicion,
+                    as: 'Posicion',
+                    where: { Ubicacion: ubi },
+                    attributes: ['Ubicacion'] 
+                },
+                attributes: ['IdProducto']
+            });
+        
+            const productosIds = conteos.map((conteo: any) => conteo.IdProducto);
+        
+            const productos = await db.Producto.findAll({
+                where: { IdProducto: productosIds },
+                attributes: ['IdProducto', 'Nombre']
+            });
+        
+            const resultado = conteos.map((conteo: any) => {
+                const producto = productos.find((p: any) => p.IdProducto === conteo.IdProducto);
+                return {
+                    Ubicacion: conteo.Posicion.Ubicacion,
+                    Nombre: producto ? producto.Nombre : "Producto no encontrado"
+                };
+            });
+        
+            res.status(200).json(resultado);
+    
+        } catch (error) {
+            console.log(error);
+            res.status(500).send("Internal server error: " + error);
+        }
+    }
+
 
     private async getDescriptionByName(req: Request, res: Response) {
         try {
