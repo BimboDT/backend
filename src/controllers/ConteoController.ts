@@ -8,6 +8,12 @@ import AbstractController from "./AbstractController";
 import db from "../models";
 import { Op, Sequelize } from "sequelize";
 
+
+interface Posicion {
+    IdPos: number;
+    Contado: boolean;
+}
+
 // Define the ConteoController class
 class ConteoController extends AbstractController {
     // Singleton
@@ -49,7 +55,7 @@ class ConteoController extends AbstractController {
     private getTest(req: Request, res: Response) {
         try {
             console.log("Prueba exitosa");
-            res.status(200).send("<h1>Prueba exitosa</h1>");
+            res.status(200).send("Prueba exitosa");
         } catch (error: any) {
          console.log(error);
          res.status(500).send("Internal server error" + error);
@@ -88,9 +94,11 @@ class ConteoController extends AbstractController {
                 attributes: ['IdPos'],
             });
 
-            res.status(200).json(uncountedPositions);
+            const positionsList = uncountedPositions.map((pos:Posicion) => pos.IdPos);
+
+            res.status(200).json({ positions: positionsList });
         } catch (error) {
-            console.error(error);
+            console.log(error);
             res.status(500).send('Internal server error: ' + error);
         }
     }
@@ -115,7 +123,7 @@ class ConteoController extends AbstractController {
 
             res.status(200).json(latestRecord);
         } catch (error) {
-            console.error(error);
+            console.log(error);
             res.status(500).send('Internal server error: ' + error);
         }
     }
@@ -435,7 +443,7 @@ class ConteoController extends AbstractController {
             });
 
         } catch (error) {
-            console.error(error);
+            console.log(error);
             res.status(500).send("Internal server error: " + error);
         }
     }
@@ -472,7 +480,7 @@ class ConteoController extends AbstractController {
             res.status(200).json(formattedResults);
             
         } catch (error: any) { 
-            console.error(error);
+            console.log(error);
             res.status(500).send("Internal server error: " + error);
         }
     }

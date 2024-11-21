@@ -32,7 +32,7 @@ class ImageController extends AbstractController {
     private getTest(req: Request, res: Response) {
         try {
           console.log("Prueba exitosa");
-          res.status(200).send("<h1>Prueba exitosa</h1>");
+          res.status(200).send("Prueba exitosa");
     
         } catch (error: any) {
           console.log(error);
