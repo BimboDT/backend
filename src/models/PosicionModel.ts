@@ -21,6 +21,7 @@ interface PosAttributes {
     Pasillo: string;
     Profundidad: number;
     Afectado: boolean;
+    Contado: boolean;
 }
 
 // Define the Posicion Model, for the Sequelize ORM, representing the positions inside a warehouse in the database
@@ -35,6 +36,7 @@ module.exports = (sequelize: any, DataTypes: any) => {
         public Pasillo!: string;
         public Profundidad!: number;
         public Afectado!: boolean;
+        public Contado!: boolean;
     }
 
     // Initializes the Posicion model with its attributes and options
@@ -61,7 +63,10 @@ module.exports = (sequelize: any, DataTypes: any) => {
             Afectado: {
                 type: DataTypes.BOOLEAN,
                 allowNull: false,
-            },
+            },Contado: {
+                type: DataTypes.BOOLEAN,
+                allowNull: false,
+            }, 
         }, 
         {
             sequelize,
