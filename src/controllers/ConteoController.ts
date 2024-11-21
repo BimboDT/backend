@@ -38,8 +38,8 @@ class ConteoController extends AbstractController {
         this.router.get("/numeroConteos/:ubi/:fechaConteo", this.getNumberOfCycleCountings.bind(this)); // 3° filter        
         this.router.get("/productoDeUbicacion/:ubi", this.getProductByLocation.bind(this));
         this.router.get("/descripcionProducto/:prod", this.getDescriptionByName.bind(this));
-        this.router.get("/incidenciasPorMes/:mes", this.getIncidenciaByMonth.bind(this));
-        this.router.get("/productoMasDiscrepancia", this.getMostDiscrepancyProduct.bind(this));
+        this.router.get("/incidenciasPorMes/:anio", this.getIncidenciaByMonth.bind(this));
+        this.router.get("/productosMasDiscrepancia", this.getMostDiscrepancyProductTop10.bind(this));
         this.router.get("/porcentajeAlmacen", this.getWarehouseCompleteness.bind(this));
         this.router.get("/top10Productos", this.getTop10Products.bind(this));
 
@@ -352,25 +352,31 @@ class ConteoController extends AbstractController {
 
     private async getIncidenciaByMonth(req: Request, res: Response) {
         try {
-            const { mes } = req.params;
+            const { anio } = req.params;
 
-            const fechaInicio = new Date(mes);
+            const incidenciasPorMes: { [key: string]: number } = {};
 
-            const anio = fechaInicio.getFullYear();
-            const mesNumero = fechaInicio.getMonth() + 1; // Mes en JavaScript es 0-indexado
+            for (let mes = 0; mes < 12; mes++) {
+                const fechaInicio = new Date(parseInt(anio), mes, 1);
+                const fechaFin = new Date(parseInt(anio), mes + 1, 0);
 
-            const conteos = await db.Conteo.findAll({
-                where: Sequelize.and(
-                    Sequelize.where(Sequelize.fn("YEAR", Sequelize.col("FechaConteo")), anio),
-                    Sequelize.where(Sequelize.fn("MONTH", Sequelize.col("FechaConteo")), mesNumero)
-                )
-            });
+                const conteos = await db.Conteo.findAll({
+                    where: {
+                        FechaConteo: {
+                            [Op.between]: [fechaInicio, fechaFin]
+                        }
+                    }
+                });
 
-            const incidencias = conteos.reduce((count: any, conteo: any) => {
-                return conteo.CajasSistema !== conteo.CajasFisico ? count + 1 : count;
-            }, 0);
+                const incidencias = conteos.reduce((count: any, conteo: any) => {
+                    return conteo.CajasSistema !== conteo.CajasFisico ? count + 1 : count;
+                }, 0);
 
-            res.status(200).json({ incidencias });
+                const nombreMes = fechaInicio.toLocaleString('es-ES', { month: 'long' });
+                incidenciasPorMes[nombreMes] = incidencias;
+            }
+
+            res.status(200).json(incidenciasPorMes);
 
         } catch (error: any) {
             console.log(error);
@@ -378,32 +384,37 @@ class ConteoController extends AbstractController {
         }
     }
 
-    private async getMostDiscrepancyProduct(req: Request, res: Response) {
+    private async getMostDiscrepancyProductTop10(req: Request, res: Response) {
         try {
             // Obtener las incidencias agrupadas por producto
-            const productosConIncidencias = await db.Conteo.findAll({
+            const top10DiscrepancyProducts = await db.Conteo.findAll({
                 attributes: [
                     "IdProducto",
-                    [Sequelize.fn("COUNT", Sequelize.col("IdProducto")), "TotalIncidencias"]
+                    [Sequelize.fn("SUM", Sequelize.literal("ABS(CajasFisico - CajasSistema)")), "TotalDiscrepancia"]
                 ],
-                where: {
-                    CajasSistema: { [Op.ne]: Sequelize.col("CajasFisico") }
-                },
                 group: ["IdProducto"],
-                order: [[Sequelize.literal("TotalIncidencias"), "DESC"]], 
-                limit: 1 
+                order: [[Sequelize.literal("TotalDiscrepancia"), "DESC"]],
+                limit: 10,
+                raw: true
             });
 
-            // Verificar si se encontraron resultados
-            if (productosConIncidencias.length === 0) {
-                res.status(404).send("No se encontraron incidencias.");
-            }
+            const productIds = top10DiscrepancyProducts.map((product: any) => product.IdProducto);
 
-            const productoConMasIncidencias = productosConIncidencias[0];
-            const { IdProducto, TotalIncidencias } = productoConMasIncidencias.get();
+            const productNames = await db.Producto.findAll({
+                where: { IdProducto: productIds },
+                attributes: ["IdProducto", "Nombre"],
+                raw: true
+            });
 
-            // Responder con el resultado
-            res.status(200).json({ IdProducto, TotalIncidencias });
+            const formattedResults = top10DiscrepancyProducts.map((product: any) => {
+                const productName = productNames.find((p: any) => p.IdProducto === product.IdProducto)?.Nombre || "Sin nombre";
+                return {
+                    nombreProducto: productName,
+                    totalDiscrepancia: product.TotalDiscrepancia
+                };
+            });
+
+            res.status(200).json(formattedResults);
             
         } catch (error: any) {
             console.log(error);
