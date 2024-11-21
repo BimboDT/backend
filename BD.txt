@@ -25,16 +25,16 @@ INSERT INTO Rack VALUES ('K', 500);
 INSERT INTO Rack VALUES ('L', 500);
 
 -- Datos para la tabla Posicion
-INSERT INTO Posicion VALUES ('F101502', 'Outbound', 'A1', 7, false);
-INSERT INTO Posicion VALUES ('K152603', 'Inbound', 'B2', 5, false);
-INSERT INTO Posicion VALUES ('D041601', 'Picking', 'C3', 2, true);
-INSERT INTO Posicion VALUES ('A051902', 'Packing', 'D4', 3, false);
-INSERT INTO Posicion VALUES ('B040603', 'Reserva1', 'E5', 1, false);
-INSERT INTO Posicion VALUES ('M072101', 'Reserva2', 'F6', 4, true);
-INSERT INTO Posicion VALUES ('G083102', 'Outbound', 'G7', 5, false);
-INSERT INTO Posicion VALUES ('K270301', 'Inbound', 'H8', 6, false);
-INSERT INTO Posicion VALUES ('G021302', 'Picking', 'I9', 7, true);
-INSERT INTO Posicion VALUES ('A042201', 'Packing', 'J10', 1, false);
+INSERT INTO Posicion VALUES ('F101502', 'Outbound', 'A1', 7, false, true);
+INSERT INTO Posicion VALUES ('K152603', 'Inbound', 'B2', 5, false, true);
+INSERT INTO Posicion VALUES ('D041601', 'Picking', 'C3', 2, true, false);
+INSERT INTO Posicion VALUES ('A051902', 'Packing', 'D4', 3, false, false);
+INSERT INTO Posicion VALUES ('B040603', 'Reserva1', 'E5', 1, false, true);
+INSERT INTO Posicion VALUES ('M072101', 'Reserva2', 'F6', 4, true, false);
+INSERT INTO Posicion VALUES ('G083102', 'Outbound', 'G7', 5, false, false);
+INSERT INTO Posicion VALUES ('K270301', 'Inbound', 'H8', 6, false, false);
+INSERT INTO Posicion VALUES ('G021302', 'Picking', 'I9', 7, true, false);
+INSERT INTO Posicion VALUES ('A042201', 'Packing', 'J10', 1, false, false);
 
 
 -- Datos para la tabla Imagen
