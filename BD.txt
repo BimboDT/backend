@@ -1,14 +1,15 @@
 -- Datos para la tabla Empleado
-INSERT INTO Empleado VALUES (101, 'Juan Pérez');
-INSERT INTO Empleado VALUES (102, 'María López');
-INSERT INTO Empleado VALUES (103, 'Carlos Ramírez');
-INSERT INTO Empleado VALUES (104, 'Ana González');
-INSERT INTO Empleado VALUES (105, 'Pedro Sánchez');
-INSERT INTO Empleado VALUES (106, 'Laura Torres');
-INSERT INTO Empleado VALUES (107, 'Luis Martínez');
-INSERT INTO Empleado VALUES (108, 'Carmen Ortiz');
-INSERT INTO Empleado VALUES (109, 'José Morales');
-INSERT INTO Empleado VALUES (110, 'Marta Vázquez');
+INSERT INTO Empleado VALUES (482, 'Juan Pérez');
+INSERT INTO Empleado VALUES (739, 'María López');
+INSERT INTO Empleado VALUES (156, 'Carlos Ramírez');
+INSERT INTO Empleado VALUES (824, 'Ana González');
+INSERT INTO Empleado VALUES (391, 'Pedro Sánchez');
+INSERT INTO Empleado VALUES (507, 'Laura Torres');
+INSERT INTO Empleado VALUES (268, 'Luis Martínez');
+INSERT INTO Empleado VALUES (945, 'Carmen Ortiz');
+INSERT INTO Empleado VALUES (613, 'José Morales');
+INSERT INTO Empleado VALUES (372, 'Marta Vázquez');
+
 
 -- Datos para la tabla Rack
 INSERT INTO Rack VALUES ('A', 500);
@@ -23,70 +24,1485 @@ INSERT INTO Rack VALUES ('I', 500);
 INSERT INTO Rack VALUES ('J', 500);
 INSERT INTO Rack VALUES ('K', 500);
 INSERT INTO Rack VALUES ('L', 500);
+INSERT INTO Rack VALUES ('M', 500);
+INSERT INTO Rack VALUES ('N', 500);
+INSERT INTO Rack VALUES ('O', 500);
+
 
 -- Datos para la tabla Posicion
-INSERT INTO Posicion VALUES ('F101502', 'Outbound', 'A1', 7, false, true);
-INSERT INTO Posicion VALUES ('K152603', 'Inbound', 'B2', 5, false, true);
-INSERT INTO Posicion VALUES ('D041601', 'Picking', 'C3', 2, true, false);
-INSERT INTO Posicion VALUES ('A051902', 'Packing', 'D4', 3, false, false);
-INSERT INTO Posicion VALUES ('B040603', 'Reserva1', 'E5', 1, false, true);
-INSERT INTO Posicion VALUES ('M072101', 'Reserva2', 'F6', 4, true, false);
-INSERT INTO Posicion VALUES ('G083102', 'Outbound', 'G7', 5, false, false);
-INSERT INTO Posicion VALUES ('K270301', 'Inbound', 'H8', 6, false, false);
-INSERT INTO Posicion VALUES ('G021302', 'Picking', 'I9', 7, true, false);
-INSERT INTO Posicion VALUES ('A042201', 'Packing', 'J10', 1, false, false);
+-- RACK A 
+INSERT INTO Posicion VALUES ('A010101', 'Reserva2', 'A1', 7, false, true);
+INSERT INTO Posicion VALUES ('A010102', 'Reserva2', 'A1', 7, false, true);
+INSERT INTO Posicion VALUES ('A010103', 'Reserva2', 'A1', 7, false, true);
+INSERT INTO Posicion VALUES ('A010201', 'Reserva2', 'A1', 7, false, true);
+INSERT INTO Posicion VALUES ('A010202', 'Reserva2', 'A1', 7, false, true);
+INSERT INTO Posicion VALUES ('A010203', 'Reserva2', 'A1', 7, false, true);
+INSERT INTO Posicion VALUES ('A010301', 'Reserva2', 'A1', 7, false, true);
+INSERT INTO Posicion VALUES ('A010302', 'Reserva2', 'A1', 7, false, true);
+INSERT INTO Posicion VALUES ('A010303', 'Reserva2', 'A1', 7, false, true);
+INSERT INTO Posicion VALUES ('A010401', 'Reserva2', 'A1', 7, false, false);
+INSERT INTO Posicion VALUES ('A010402', 'Reserva2', 'A1', 7, false, false);
+INSERT INTO Posicion VALUES ('A010403', 'Reserva2', 'A1', 7, false, false);
+INSERT INTO Posicion VALUES ('A010501', 'Reserva2', 'A1', 7, false, false);
+INSERT INTO Posicion VALUES ('A010502', 'Reserva2', 'A1', 7, false, false);
+INSERT INTO Posicion VALUES ('A010503', 'Reserva2', 'A1', 7, false, false);
+INSERT INTO Posicion VALUES ('A010601', 'Reserva2', 'A1', 7, false, false);
+INSERT INTO Posicion VALUES ('A010602', 'Reserva2', 'A1', 7, false, false);
+INSERT INTO Posicion VALUES ('A010603', 'Reserva2', 'A1', 7, false, false);
+
+-- RACK B
+INSERT INTO Posicion VALUES ('B020101', 'Reserva2', 'B2', 7, false, true);
+INSERT INTO Posicion VALUES ('B020102', 'Reserva2', 'B2', 7, false, true);
+INSERT INTO Posicion VALUES ('B020103', 'Reserva2', 'B2', 7, false, true);
+INSERT INTO Posicion VALUES ('B020201', 'Reserva2', 'B2', 7, false, true);
+INSERT INTO Posicion VALUES ('B020202', 'Reserva2', 'B2', 7, false, true);
+INSERT INTO Posicion VALUES ('B020203', 'Reserva2', 'B2', 7, false, true);
+INSERT INTO Posicion VALUES ('B020301', 'Reserva2', 'B2', 7, false, true);
+INSERT INTO Posicion VALUES ('B020302', 'Reserva2', 'B2', 7, false, true);
+INSERT INTO Posicion VALUES ('B020303', 'Reserva2', 'B2', 7, false, true);
+INSERT INTO Posicion VALUES ('B020401', 'Reserva2', 'B2', 7, false, false);
+INSERT INTO Posicion VALUES ('B020402', 'Reserva2', 'B2', 7, false, false);
+INSERT INTO Posicion VALUES ('B020403', 'Reserva2', 'B2', 7, false, false);
+INSERT INTO Posicion VALUES ('B020501', 'Reserva2', 'B2', 7, false, false);
+INSERT INTO Posicion VALUES ('B020502', 'Reserva2', 'B2', 7, false, false);
+INSERT INTO Posicion VALUES ('B020503', 'Reserva2', 'B2', 7, false, false);
+INSERT INTO Posicion VALUES ('B020601', 'Reserva2', 'B2', 7, false, false);
+INSERT INTO Posicion VALUES ('B020602', 'Reserva2', 'B2', 7, false, false);
+INSERT INTO Posicion VALUES ('B020603', 'Reserva2', 'B2', 7, false, false);
+
+--RACK C
+INSERT INTO Posicion VALUES ('C030101', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030102', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030103', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030201', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030202', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030203', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030301', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030302', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030303', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030401', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030402', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030403', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030501', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030502', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030503', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030601', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030602', 'Reserva2', 'C3', 7, false, true);
+INSERT INTO Posicion VALUES ('C030603', 'Reserva2', 'C3', 7, false, true);
+
+--RACK D
+INSERT INTO Posicion VALUES ('D040101', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040102', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040103', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040201', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040202', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040203', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040301', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040302', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040303', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040401', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040402', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040403', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040501', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040502', 'Reserva2', 'D4', 7, false, true);
+INSERT INTO Posicion VALUES ('D040503', 'Reserva2', 'D4', 7, false, false);
+INSERT INTO Posicion VALUES ('D040601', 'Reserva2', 'D4', 7, false, false);
+INSERT INTO Posicion VALUES ('D040602', 'Reserva2', 'D4', 7, false, false);
+INSERT INTO Posicion VALUES ('D040603', 'Reserva2', 'D4', 7, false, false);
+
+-- RACK E
+INSERT INTO Posicion VALUES ('E050101', 'Reserva2', 'E5', 7, false, true);
+INSERT INTO Posicion VALUES ('E050102', 'Reserva2', 'E5', 7, false, true);
+INSERT INTO Posicion VALUES ('E050103', 'Reserva2', 'E5', 7, false, true);
+INSERT INTO Posicion VALUES ('E050201', 'Reserva2', 'E5', 7, false, true);
+INSERT INTO Posicion VALUES ('E050202', 'Reserva2', 'E5', 7, false, true);
+INSERT INTO Posicion VALUES ('E050203', 'Reserva2', 'E5', 7, false, true);
+INSERT INTO Posicion VALUES ('E050301', 'Reserva2', 'E5', 7, false, true);
+INSERT INTO Posicion VALUES ('E050302', 'Reserva2', 'E5', 7, false, true);
+INSERT INTO Posicion VALUES ('E050303', 'Reserva2', 'E5', 7, false, true);
+INSERT INTO Posicion VALUES ('E050401', 'Reserva2', 'E5', 7, false, false);
+INSERT INTO Posicion VALUES ('E050402', 'Reserva2', 'E5', 7, false, false);
+INSERT INTO Posicion VALUES ('E050403', 'Reserva2', 'E5', 7, false, false);
+INSERT INTO Posicion VALUES ('E050501', 'Reserva2', 'E5', 7, false, false);
+INSERT INTO Posicion VALUES ('E050502', 'Reserva2', 'E5', 7, false, false);
+INSERT INTO Posicion VALUES ('E050503', 'Reserva2', 'E5', 7, false, false);
+INSERT INTO Posicion VALUES ('E050601', 'Reserva2', 'E5', 7, false, false);
+INSERT INTO Posicion VALUES ('E050602', 'Reserva2', 'E5', 7, false, false);
+INSERT INTO Posicion VALUES ('E050603', 'Reserva2', 'E5', 7, false, false);
+
+-- RACK F
+INSERT INTO Posicion VALUES ('F060101', 'Reserva2', 'F6', 7, false, true);
+INSERT INTO Posicion VALUES ('F060102', 'Reserva2', 'F6', 7, false, true);
+INSERT INTO Posicion VALUES ('F060103', 'Reserva2', 'F6', 7, false, true);
+INSERT INTO Posicion VALUES ('F060201', 'Reserva2', 'F6', 7, false, true);
+INSERT INTO Posicion VALUES ('F060202', 'Reserva2', 'F6', 7, false, true);
+INSERT INTO Posicion VALUES ('F060203', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060301', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060302', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060303', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060401', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060402', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060403', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060501', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060502', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060503', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060601', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060602', 'Reserva2', 'F6', 7, false, false);
+INSERT INTO Posicion VALUES ('F060603', 'Reserva2', 'F6', 7, false, false);
+
+-- RACK G
+INSERT INTO Posicion VALUES ('G070101', 'Reserva2', 'G7', 7, false, true);
+INSERT INTO Posicion VALUES ('G070102', 'Reserva2', 'G7', 7, false, true);
+INSERT INTO Posicion VALUES ('G070103', 'Reserva2', 'G7', 7, false, true);
+INSERT INTO Posicion VALUES ('G070201', 'Reserva2', 'G7', 7, false, true);
+INSERT INTO Posicion VALUES ('G070202', 'Reserva2', 'G7', 7, false, true);
+INSERT INTO Posicion VALUES ('G070203', 'Reserva2', 'G7', 7, false, true);
+INSERT INTO Posicion VALUES ('G070301', 'Reserva2', 'G7', 7, false, true);
+INSERT INTO Posicion VALUES ('G070302', 'Reserva2', 'G7', 7, false, true);
+INSERT INTO Posicion VALUES ('G070303', 'Reserva2', 'G7', 7, false, true);
+INSERT INTO Posicion VALUES ('G070401', 'Reserva2', 'G7', 7, false, true);
+INSERT INTO Posicion VALUES ('G070402', 'Reserva2', 'G7', 7, false, true);
+INSERT INTO Posicion VALUES ('G070403', 'Reserva2', 'G7', 7, false, false);
+INSERT INTO Posicion VALUES ('G070501', 'Reserva2', 'G7', 7, false, false);
+INSERT INTO Posicion VALUES ('G070502', 'Reserva2', 'G7', 7, false, false);
+INSERT INTO Posicion VALUES ('G070503', 'Reserva2', 'G7', 7, false, false);
+INSERT INTO Posicion VALUES ('G070601', 'Reserva2', 'G7', 7, false, false);
+INSERT INTO Posicion VALUES ('G070602', 'Reserva2', 'G7', 7, false, false);
+INSERT INTO Posicion VALUES ('G070603', 'Reserva2', 'G7', 7, false, false);
+
+-- RACK H
+INSERT INTO Posicion VALUES ('H080101', 'Reserva2', 'H8', 7, false, true);
+INSERT INTO Posicion VALUES ('H080102', 'Reserva2', 'H8', 7, false, true);
+INSERT INTO Posicion VALUES ('H080103', 'Reserva2', 'H8', 7, false, true);
+INSERT INTO Posicion VALUES ('H080201', 'Reserva2', 'H8', 7, false, true);
+INSERT INTO Posicion VALUES ('H080202', 'Reserva2', 'H8', 7, false, true);
+INSERT INTO Posicion VALUES ('H080203', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080301', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080302', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080303', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080401', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080402', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080403', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080501', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080502', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080503', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080601', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080602', 'Reserva2', 'H8', 7, false, false);
+INSERT INTO Posicion VALUES ('H080603', 'Reserva2', 'H8', 7, false, false);
+
+-- RACK I
+INSERT INTO Posicion VALUES ('I090101', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090102', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090103', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090201', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090202', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090203', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090301', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090302', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090303', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090401', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090402', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090403', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090501', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090502', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090503', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090601', 'Reserva2', 'I9', 7, false, true);
+INSERT INTO Posicion VALUES ('I090602', 'Reserva2', 'I9', 7, false, false);
+INSERT INTO Posicion VALUES ('I090603', 'Reserva2', 'I9', 7, false, false);
+
+-- RACK J
+INSERT INTO Posicion VALUES ('J100101', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100102', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100103', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100201', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100202', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100203', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100301', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100302', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100303', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100401', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100402', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100403', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100501', 'Reserva2', 'J10', 7, false, true);
+INSERT INTO Posicion VALUES ('J100502', 'Reserva2', 'J10', 7, false, false);
+INSERT INTO Posicion VALUES ('J100503', 'Reserva2', 'J10', 7, false, false);
+INSERT INTO Posicion VALUES ('J100601', 'Reserva2', 'J10', 7, false, false);
+INSERT INTO Posicion VALUES ('J100602', 'Reserva2', 'J10', 7, false, false);
+INSERT INTO Posicion VALUES ('J100603', 'Reserva2', 'J10', 7, false, false);
+
+-- RACK K
+INSERT INTO Posicion VALUES ('K110101', 'Reserva2', 'K11', 7, false, true);
+INSERT INTO Posicion VALUES ('K110102', 'Reserva2', 'K11', 7, false, true);
+INSERT INTO Posicion VALUES ('K110103', 'Reserva2', 'K11', 7, false, true);
+INSERT INTO Posicion VALUES ('K110201', 'Reserva2', 'K11', 7, false, true);
+INSERT INTO Posicion VALUES ('K110202', 'Reserva2', 'K11', 7, false, true);
+INSERT INTO Posicion VALUES ('K110203', 'Reserva2', 'K11', 7, false, true);
+INSERT INTO Posicion VALUES ('K110301', 'Reserva2', 'K11', 7, false, false);
+INSERT INTO Posicion VALUES ('K110302', 'Reserva2', 'K11', 7, false, false);
+INSERT INTO Posicion VALUES ('K110303', 'Reserva2', 'K11', 7, false, false);
+INSERT INTO Posicion VALUES ('K110401', 'Reserva2', 'K11', 7, false, false);
+INSERT INTO Posicion VALUES ('K110402', 'Reserva2', 'K11', 7, false, false);
+INSERT INTO Posicion VALUES ('K110403', 'Reserva2', 'K11', 7, false, false);
+INSERT INTO Posicion VALUES ('K110501', 'Reserva2', 'K11', 7, false, false);
+INSERT INTO Posicion VALUES ('K110502', 'Reserva2', 'K11', 7, false, false);
+INSERT INTO Posicion VALUES ('K110503', 'Reserva2', 'K11', 7, false, false);
+INSERT INTO Posicion VALUES ('K110601', 'Reserva2', 'K11', 7, false, false);
+INSERT INTO Posicion VALUES ('K110602', 'Reserva2', 'K11', 7, false, false);
+INSERT INTO Posicion VALUES ('K110603', 'Reserva2', 'K11', 7, false, false);
+
+-- RACK L
+INSERT INTO Posicion VALUES ('L120101', 'Reserva2', 'L12', 7, false, true);
+INSERT INTO Posicion VALUES ('L120102', 'Reserva2', 'L12', 7, false, true);
+INSERT INTO Posicion VALUES ('L120103', 'Reserva2', 'L12', 7, false, true);
+INSERT INTO Posicion VALUES ('L120201', 'Reserva2', 'L12', 7, false, true);
+INSERT INTO Posicion VALUES ('L120202', 'Reserva2', 'L12', 7, false, true);
+INSERT INTO Posicion VALUES ('L120203', 'Reserva2', 'L12', 7, false, true);
+INSERT INTO Posicion VALUES ('L120301', 'Reserva2', 'L12', 7, false, true);
+INSERT INTO Posicion VALUES ('L120302', 'Reserva2', 'L12', 7, false, true);
+INSERT INTO Posicion VALUES ('L120303', 'Reserva2', 'L12', 7, false, true);
+INSERT INTO Posicion VALUES ('L120401', 'Reserva2', 'L12', 7, false, false);
+INSERT INTO Posicion VALUES ('L120402', 'Reserva2', 'L12', 7, false, false);
+INSERT INTO Posicion VALUES ('L120403', 'Reserva2', 'L12', 7, false, false);
+INSERT INTO Posicion VALUES ('L120501', 'Reserva2', 'L12', 7, false, false);
+INSERT INTO Posicion VALUES ('L120502', 'Reserva2', 'L12', 7, false, false);
+INSERT INTO Posicion VALUES ('L120503', 'Reserva2', 'L12', 7, false, false);
+INSERT INTO Posicion VALUES ('L120601', 'Reserva2', 'L12', 7, false, false);
+INSERT INTO Posicion VALUES ('L120602', 'Reserva2', 'L12', 7, false, false);
+INSERT INTO Posicion VALUES ('L120603', 'Reserva2', 'L12', 7, false, false);
+
+-- RACK M
+INSERT INTO Posicion VALUES ('M010101', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010102', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010103', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010104', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010201', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010202', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010203', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010204', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010301', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010302', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010303', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010304', 'Reserva1', 'M1', 22, false, true);
+INSERT INTO Posicion VALUES ('M010401', 'Reserva1', 'M1', 22, false, false);
+INSERT INTO Posicion VALUES ('M010402', 'Reserva1', 'M1', 22, false, false);
+INSERT INTO Posicion VALUES ('M010403', 'Reserva1', 'M1', 22, false, false);
+INSERT INTO Posicion VALUES ('M010404', 'Reserva1', 'M1', 22, false, false);
+INSERT INTO Posicion VALUES ('M010501', 'Reserva1', 'M1', 22, false, false);
+INSERT INTO Posicion VALUES ('M010502', 'Reserva1', 'M1', 22, false, false);
+INSERT INTO Posicion VALUES ('M010503', 'Reserva1', 'M1', 22, false, false);
+INSERT INTO Posicion VALUES ('M010504', 'Reserva1', 'M1', 22, false, false);
+INSERT INTO Posicion VALUES ('M010601', 'Reserva1', 'M1', 22, false, false);
+INSERT INTO Posicion VALUES ('M010602', 'Reserva1', 'M1', 22, false, false);
+INSERT INTO Posicion VALUES ('M010603', 'Reserva1', 'M1', 22, false, false);
+INSERT INTO Posicion VALUES ('M010604', 'Reserva1', 'M1', 22, false, false);
+
+-- RACK N
+INSERT INTO Posicion VALUES ('N020101', 'Reserva1', 'N2', 22, false, true);
+INSERT INTO Posicion VALUES ('N020102', 'Reserva1', 'N2', 22, false, true);
+INSERT INTO Posicion VALUES ('N020103', 'Reserva1', 'N2', 22, false, true);
+INSERT INTO Posicion VALUES ('N020104', 'Reserva1', 'N2', 22, false, true);
+INSERT INTO Posicion VALUES ('N020201', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020202', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020203', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020204', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020301', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020302', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020303', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020304', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020401', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020402', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020403', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020404', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020501', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020502', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020503', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020504', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020601', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020602', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020603', 'Reserva1', 'N2', 22, false, false);
+INSERT INTO Posicion VALUES ('N020604', 'Reserva1', 'N2', 22, false, false);
+
+-- RACK O
+INSERT INTO Posicion VALUES ('O030101', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030102', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030103', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030104', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030201', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030202', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030203', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030204', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030301', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030302', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030303', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030304', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030401', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030402', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030403', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030404', 'Reserva1', 'O3', 22, false, true);
+INSERT INTO Posicion VALUES ('O030501', 'Reserva1', 'O3', 22, false, false);
+INSERT INTO Posicion VALUES ('O030502', 'Reserva1', 'O3', 22, false, false);
+INSERT INTO Posicion VALUES ('O030503', 'Reserva1', 'O3', 22, false, false);
+INSERT INTO Posicion VALUES ('O030504', 'Reserva1', 'O3', 22, false, false);
+INSERT INTO Posicion VALUES ('O030601', 'Reserva1', 'O3', 22, false, false);
+INSERT INTO Posicion VALUES ('O030602', 'Reserva1', 'O3', 22, false, false);
+INSERT INTO Posicion VALUES ('O030603', 'Reserva1', 'O3', 22, false, false);
+INSERT INTO Posicion VALUES ('O030604', 'Reserva1', 'O3', 22, false, false);
 
 
 -- Datos para la tabla Imagen
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Outbound', 'Real', 'https://example.com/image1.jpg', '2024-11-01 ');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Inbound', 'Procesado', 'https://example.com/image2.jpg', '2024-11-02');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Picking', 'Prod', 'https://example.com/image3.jpg', '2024-11-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Packing', 'Real', 'https://example.com/image4.jpg', '2024-11-04');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Procesado', 'https://example.com/image5.jpg', '2024-11-05');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image6.jpg', '2024-11-06');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Outbound', 'Real', 'https://example.com/image7.jpg', '2024-11-07');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Inbound', 'Procesado', 'https://example.com/image8.jpg', '2024-11-08');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Picking', 'Prod', 'https://example.com/image9.jpg', '2024-11-09');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Packing', 'Real', 'https://example.com/image10.jpg', '2024-11-10');
+-- IMAGES FOR RACK A 
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image1.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image2.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image3.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image4.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image5.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image6.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image7.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image8.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image9.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image10.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image11.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image12.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image13.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image14.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image15.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image16.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image17.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image18.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK B 
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image19.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image20.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image21.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image22.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image23.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image24.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image25.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image26.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image27.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image28.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image29.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image30.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image31.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image32.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image33.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image34.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image35.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image36.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK C
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image37.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image38.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image39.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image40.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image41.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image42.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image43.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image44.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image45.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image46.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image47.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image48.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image49.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image50.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image51.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image52.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image53.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image54.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK D
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image55.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image56.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image57.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image58.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image59.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image60.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image61.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image62.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image63.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image64.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image65.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image66.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image67.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image68.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image69.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image70.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image71.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image72.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK E
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image73.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image74.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image75.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image76.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image77.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image78.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image79.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image80.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image81.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image82.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image83.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image84.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image85.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image86.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image87.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image88.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image89.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image90.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK F
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image91.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image92.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image93.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image94.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image95.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image96.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image97.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image98.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image99.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image100.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image101.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image102.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image103.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image104.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image105.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image106.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image107.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image108.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK G
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image109.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image110.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image111.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image112.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image113.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image114.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image115.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image116.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image117.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image118.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image119.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image120.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image121.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image122.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image123.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image124.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image125.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image126.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK H
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image127.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image128.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image129.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image130.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image131.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image132.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image133.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image134.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image135.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image136.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image137.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image138.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image139.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image140.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image141.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image142.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image143.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image144.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK I
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image145.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image146.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image147.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image148.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image149.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image150.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image151.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image152.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image153.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image154.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image155.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image156.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image157.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image158.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image159.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image160.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image161.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image162.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK J
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image163.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image164.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image165.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image166.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image167.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image168.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image169.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image170.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image171.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image172.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image173.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image174.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image175.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image176.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image177.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image178.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image179.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image180.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK K
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image181.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image182.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image183.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image184.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image185.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image186.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image187.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image188.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image189.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image190.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image191.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image192.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image193.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image194.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image195.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image196.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image197.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image198.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK L
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image199.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image200.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image201.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image202.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image203.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image204.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image205.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image206.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image207.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image208.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image209.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image210.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image211.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image212.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image213.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image214.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image215.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image216.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK M
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image217.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image218.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image219.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image220.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image221.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image222.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image223.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image224.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image225.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image226.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image227.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image228.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image229.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image230.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image231.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image232.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image233.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image234.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image235.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image236.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image237.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image238.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image239.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image240.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK N
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image241.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image242.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image243.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image244.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image245.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image246.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image247.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image248.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image249.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image250.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image251.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image252.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image253.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image254.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image255.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image256.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image257.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image258.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image259.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image260.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image261.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image262.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image263.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image264.jpg', '2024-10-03');
+
+-- IMAGES FOR RACK O
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image265.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image266.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image267.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image268.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image269.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image270.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image271.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image272.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image273.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image274.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image275.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image276.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image277.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image278.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image279.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image280.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image281.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image282.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image283.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image284.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image285.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image286.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image287.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image288.jpg', '2024-10-03');
+
 
 -- Datos para la tabla Producto
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU001', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '42', 10, 1);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU002', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '31', 8, 2);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU003', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 3);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU004', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 4);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU005', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 5);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU006', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 6);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU007', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 7);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU008', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '39', 8, 8);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU009', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '42', 15, 9);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU010', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 10);
+-- PRODUCT FOR RACK A
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU001', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '32', 8, 1);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU002', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '32', 8, 2);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU003', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '32', 8, 3);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU004', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '32', 8, 4);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU005', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '32', 8, 5);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU006', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '32', 8, 6);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU007', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '32', 8, 7);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU008', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '32', 8, 8);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU009', 'Barra Energética', 'Barra', 'Deliciosa barra de cereal', '32', 8, 9);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU010', 'Pan Integral', 'Pan', 'Pan integral saludable', '42', 10, 10);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU011', 'Pan Integral', 'Pan', 'Pan integral saludable', '42', 10, 11);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU012', 'Pan Integral', 'Pan', 'Pan integral saludable', '42', 10, 12);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU013', 'Pan Integral', 'Pan', 'Pan integral saludable', '42', 10, 13);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU014', 'Pan Integral', 'Pan', 'Pan integral saludable', '42', 10, 14);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU015', 'Pan Integral', 'Pan', 'Pan integral saludable', '42', 10, 15);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU016', 'Pan Integral', 'Pan', 'Pan integral saludable', '42', 10, 16);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU017', 'Pan Integral', 'Pan', 'Pan integral saludable', '42', 10, 17);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU018', 'Pan Integral', 'Pan', 'Pan integral saludable', '42', 10, 18);
+
+-- PRODUCT FOR RACK B
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU019', 'Pan Blanco', 'Pan', 'Pan blanco suave', '42', 10, 19);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU020', 'Pan Blanco', 'Pan', 'Pan blanco suave', '42', 10, 20);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU021', 'Pan Blanco', 'Pan', 'Pan blanco suave', '42', 10, 21);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU022', 'Pan Blanco', 'Pan', 'Pan blanco suave', '42', 10, 22);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU023', 'Pan Blanco', 'Pan', 'Pan blanco suave', '42', 10, 23);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU024', 'Pan Blanco', 'Pan', 'Pan blanco suave', '42', 10, 24);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU025', 'Pan Blanco', 'Pan', 'Pan blanco suave', '42', 10, 25);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU026', 'Pan Blanco', 'Pan', 'Pan blanco suave', '42', 10, 26);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU027', 'Pan Blanco', 'Pan', 'Pan blanco suave', '42', 10, 27);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU028', 'Pan de Trigo', 'Pan', 'Pan de trigo integral', '42', 10, 28);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU029', 'Pan de Trigo', 'Pan', 'Pan de trigo integral', '42', 10, 29);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU030', 'Pan de Trigo', 'Pan', 'Pan de trigo integral', '42', 10, 30);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU031', 'Pan de Trigo', 'Pan', 'Pan de trigo integral', '42', 10, 31);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU032', 'Pan de Trigo', 'Pan', 'Pan de trigo integral', '42', 10, 32);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU033', 'Pan de Trigo', 'Pan', 'Pan de trigo integral', '42', 10, 33);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU034', 'Pan de Trigo', 'Pan', 'Pan de trigo integral', '42', 10, 34);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU035', 'Pan de Trigo', 'Pan', 'Pan de trigo integral', '42', 10, 35);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU036', 'Pan de Trigo', 'Pan', 'Pan de trigo integral', '42', 10, 36);
+
+-- PRODUCT FOR RACK C
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU037', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '35', 20, 37);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU038', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '35', 20, 38);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU039', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '35', 20, 39);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU040', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '35', 20, 40);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU041', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '35', 20, 41);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU042', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '35', 20, 42);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU043', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '35', 20, 43);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU044', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '35', 20, 44);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU045', 'Galleta Chispas', 'Galleta', 'Galleta con chispas de chocolate', '35', 20, 45);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU046', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '30', 22, 46);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU047', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '30', 22, 47);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU048', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '30', 22, 48);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU049', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '30', 22, 49);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU050', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '30', 22, 50);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU051', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '30', 22, 51);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU052', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '30', 22, 52);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU053', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '30', 22, 53);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU054', 'Dona Glaseada', 'Dona', 'Dona con glaseado de chocolate', '30', 22, 54);
+
+-- PRODUCT FOR RACK D
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU055', 'Panque Vainilla', 'Panque', 'Panque de vainilla', '27', 14, 55);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU056', 'Panque Vainilla', 'Panque', 'Panque de vainilla', '27', 14, 56);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU057', 'Panque Vainilla', 'Panque', 'Panque de vainilla', '27', 14, 57);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU058', 'Panque Vainilla', 'Panque', 'Panque de vainilla', '27', 14, 58);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU059', 'Panque Vainilla', 'Panque', 'Panque de vainilla', '27', 14, 59);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU060', 'Panque Vainilla', 'Panque', 'Panque de vainilla', '27', 14, 60);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU061', 'Panque Vainilla', 'Panque', 'Panque de vainilla', '27', 14, 61);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU062', 'Panque Vainilla', 'Panque', 'Panque de vainilla', '27', 14, 62);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU063', 'Panque Vainilla', 'Panque', 'Panque de vainilla', '27', 14, 63);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU064', 'Mantecadas', 'Mantecadas', 'Mantecadas tradicionales', '29', 12, 64);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU065', 'Mantecadas', 'Mantecadas', 'Mantecadas tradicionales', '29', 12, 65);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU066', 'Mantecadas', 'Mantecadas', 'Mantecadas tradicionales', '29', 12, 66);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU067', 'Mantecadas', 'Mantecadas', 'Mantecadas tradicionales', '29', 12, 67);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU068', 'Mantecadas', 'Mantecadas', 'Mantecadas tradicionales', '29', 12, 68);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU069', 'Mantecadas', 'Mantecadas', 'Mantecadas tradicionales', '29', 12, 69);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU070', 'Mantecadas', 'Mantecadas', 'Mantecadas tradicionales', '29', 12, 70);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU071', 'Mantecadas', 'Mantecadas', 'Mantecadas tradicionales', '29', 12, 71);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU072', 'Mantecadas', 'Mantecadas', 'Mantecadas tradicionales', '29', 12, 72);
+
+-- PRODUCT FOR RACK E
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU073', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 73);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU074', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 74);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU075', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 75);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU076', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 76);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU077', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 77);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU078', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 78);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU079', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 79);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU080', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 80);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU081', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 81);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU082', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 82);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU083', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 83);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU084', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 84);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU085', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 85);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU086', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 86);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU087', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 87);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU088', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 88);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU089', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 89);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU090', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 90);
+
+-- PRODUCT FOR RACK F
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU091', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 91);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU092', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 92);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU093', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 93);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU094', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 94);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU095', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 95);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU096', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 96);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU097', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 97);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU098', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 98);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU099', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 99);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU100', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 100);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU101', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 101);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU102', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 102);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU103', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 103);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU104', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 104);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU105', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 105);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU106', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 106);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU107', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 107);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU108', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 108);
+
+-- PRODUCT FOR RACK G
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU109', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 109);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU110', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 110);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU111', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 111);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU112', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 112);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU113', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 113);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU114', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 114);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU115', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 115);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU116', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 116);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU117', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 117);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU118', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 118);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU119', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 119);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU120', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 120);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU121', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 121);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU122', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 122);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU123', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 123);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU124', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 124);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU125', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 125);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU126', 'Barra de Proteína', 'Barra', 'Barra con alto contenido de proteínas', '42', 10, 126);
+
+-- PRODUCT FOR RACK H
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU127', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 127);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU128', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 128);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU129', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 129);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU130', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 130);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU131', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 131);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU132', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 132);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU133', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 133);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU134', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 134);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU135', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 135);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU136', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 136);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU137', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 137);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU138', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 138);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU139', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 139);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU140', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 140);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU141', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 141);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU142', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 142);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU143', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 143);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU144', 'Pan Dulce', 'PanDulce', 'Pan dulce tradicional', '39', 10, 144);
+
+-- PRODUCT FOR RACK I
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU145', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 145);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU146', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 146);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU147', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 147);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU148', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 148);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU149', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 149);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU150', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 150);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU151', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 151);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU152', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 152);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU153', 'Pan Integral', 'PanCaja', 'Pan saludable', '47', 12, 153);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU154', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 154);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU155', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 155);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU156', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 156);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU157', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 157);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU158', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 158);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU159', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 159);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU160', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 160);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU161', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 161);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU162', 'Pan de Centeno', 'PanCaja', 'Pan de centeno integral', '39', 12, 162);
+
+-- PRODUCT FOR RACK J
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU163', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 163);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU164', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 164);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU165', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 165);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU166', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 166);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU167', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 167);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU168', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 168);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU169', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 169);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU170', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 170);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU171', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 171);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU172', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 172);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU173', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 173);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU174', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 174);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU175', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 175);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU176', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 176);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU177', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 177);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU178', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 178);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU179', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 179);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU180', 'Galleta de Avena', 'Galleta', 'Galleta nutritiva de avena', '39', 15, 180);
+
+-- PRODUCT FOR RACK K
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU181', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 181);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU182', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 182);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU183', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 183);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU184', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 184);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU185', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 185);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU186', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 186);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU187', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 187);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU188', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 188);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU189', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 189);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU190', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 190);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU191', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 191);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU192', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 192);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU193', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 193);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU194', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 194);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU195', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 195);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU196', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 196);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU197', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 197);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU198', 'Panqué de Nuez', 'Panque', 'Panqué con nuez', '35', 18, 198);
+
+-- PRODUCT FOR RACK L
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU199', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 199);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU200', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 200);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU201', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 201);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU202', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 202);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU203', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 203);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU204', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 204);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU205', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 205);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU206', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 206);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU207', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 207);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU208', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 208);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU209', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 209);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU210', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 210);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU211', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 211);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU212', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 212);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU213', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 213);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU214', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 214);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU215', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 215);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU216', 'Rebanadas', 'PanTostado', 'Rebanadas con relleno cremoso de mantequilla', '40', 20, 216);
+
+-- PRODUCT FOR RACK M
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU217', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 217);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU218', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 218);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU219', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 219);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU220', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 220);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU221', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 221);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU222', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 222);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU223', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 223);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU224', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 224);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU225', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 225);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU226', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 226);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU227', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 227);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU228', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 228);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU229', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 229);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU230', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 230);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU231', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 231);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU232', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 232);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU233', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 233);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU234', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 234);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU235', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 235);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU236', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 236);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU237', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 237);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU238', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 238);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU239', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 239);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU240', 'Takis Fuego', 'Botana', 'Botana picante de maíz', '50', 30, 240);
+
+-- PRODUCT FOR RACK N
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU241', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 241);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU242', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 242);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU243', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 243);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU244', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 244);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU245', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 245);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU246', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 246);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU247', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 247);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU248', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 248);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU249', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 249);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU250', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 250);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU251', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 251);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU252', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 252);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU253', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 253);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU254', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 254);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU255', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 255);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU256', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 256);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU257', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 257);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU258', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 258);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU259', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 259);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU260', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 260);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU261', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 261);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU262', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 262);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU263', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 263);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU264', 'Pan Tostado', 'PanTostado', 'Pan tostado crujiente', '40', 20, 264);
+
+-- PRODUCT FOR RACK O
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU265', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 265);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU266', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 266);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU267', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 267);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU268', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 268);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU269', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 269);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU270', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 270);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU271', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 271);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU272', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 272);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU273', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 273);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU274', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 274);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU275', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 275);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU276', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 276);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU277', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 277);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU278', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 278);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU279', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 279);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU280', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 280);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU281', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 281);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU282', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 282);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU283', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 283);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU284', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 284);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU285', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 285);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU286', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 286);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU287', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 287);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU288', 'Nito', 'PanDulce', 'Delicioso panecito cubierto y relleno de sabroso chocolate', '45', 25, 288);
+
 
 -- Datos para la tabla Pallet
+-- PALLETS FOR RACK A
 INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 1);
 INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 2);
-INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 3);
-INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 4);
-INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 5);
-INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 6);
-INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 7);
-INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 8);
-INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 9);
-INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 10);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 3);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 4);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 5);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 6);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 7);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 8);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 9);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 10);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 11);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 12);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 13);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 14);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 15);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 16);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 17);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 18);
+
+-- PALLETS FOR RACK B
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 19);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 20);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 21);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 22);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 23);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 24);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 25);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 26);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 27);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 28);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 29);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 30);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 31);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 32);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 33);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 34);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 35);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 36);
+
+-- PALLETS FOR RACK C
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 37);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 38);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 39);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 40);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 41);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 42);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 43);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 44);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 45);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 46);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 47);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 48);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 49);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 50);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 51);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 52);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 53);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 54);
+
+-- PALLETS FOR RACK D
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 55);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 56);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 57);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 58);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 59);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 60);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 61);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 62);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 63);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 64);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 65);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 66);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 67);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 68);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 69);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 70);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 71);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 72);
+
+-- PALLETS FOR RACK E
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 73);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 74);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 75);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 76);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 77);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 78);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 79);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 80);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 81);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 82);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 83);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 84);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 85);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 86);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 87);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 88);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 89);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 90);
+
+-- PALLETS FOR RACK F
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 91);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 92);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 93);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 94);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 95);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 96);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 97);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 98);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 99);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 100);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 101);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 102);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 103);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 104);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 105);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 106);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 107);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Circulo', 108);
+
+-- PALLETS FOR RACK G
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 109);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 110);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 111);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 112);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 113);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 114);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 115);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 116);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 117);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 118);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 119);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 120);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 121);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 122);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 123);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 124);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 125);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 126);
+
+-- PALLETS FOR RACK H
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 127);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 128);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 129);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 130);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 131);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 132);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 133);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 134);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 135);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 136);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 137);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 138);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 139);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 140);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 141);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 142);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 143);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 144);
+
+-- PALLETS FOR RACK I
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 145);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 146);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 147);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 148);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 149);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 150);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 151);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 152);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 153);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 154);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 155);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 156);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 157);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 158);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 159);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 160);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 161);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 162);
+
+-- PALLETS FOR RACK J
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 163);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 164);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 165);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 166);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 167);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 168);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 169);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 170);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 171);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 172);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 173);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 174);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 175);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 176);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 177);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 178);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 179);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 180);
+
+-- PALLETS FOR RACK K
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 181);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 182);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 183);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 184);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 185);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 186);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 187);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 188);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 189);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 190);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 191);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 192);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 193);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 194);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 195);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 196);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 197);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 198);
+
+-- PALLETS FOR RACK L
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 199);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 200);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 201);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 202);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 203);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 204);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 205);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 206);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 207);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 208);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 209);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 210);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 211);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 212);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 213);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 214);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 215);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Estrella', 216);
+
+-- PALLETS FOR RACK M
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 217);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 218);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 219);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 220);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 221);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 222);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 223);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 224);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 225);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 226);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 227);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 228);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 229);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 230);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 231);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 232);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 233);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 234);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 235);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 236);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 237);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 238);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 239);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Rombo', 240);
+
+-- PALLETS FOR RACK N
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 241);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 242);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 243);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 244);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 245);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 246);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 247);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 248);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 249);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 250);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 251);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 252);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 253);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 254);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 255);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 256);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 257);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 258);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 259);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 260);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 261);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 262);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 263);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Cuadrado', 264);
+
+-- PALLETS FOR RACK O
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 265);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 266);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 267);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 268);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 269);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 270);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 271);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 272);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 273);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 274);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 275);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 276);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 277);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 278);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 279);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 280);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 281);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 282);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 283);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 284);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 285);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 286);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 287);
+INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 288);
+
+
+
+
 
 -- Datos para la tabla Conteo
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-01', '2024-10-10', 100, 95, 0, 'F101502', 'F', 1, 101);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-02', '2024-10-10', 200, 190, 0, 'F101502','F', 2, 102);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-03', '2024-10-10', 150, 150, 0, 'F101502', 'F', 3, 103);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (18, '2024-11-04', '2024-10-10', 180, 170, 0, 'K270301', 'K', 4, 104);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-05', '2024-10-10', 120, 115, 0, 'K270301', 'K', 5, 105);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-06', '2024-11-03', 250, 240, 0, 'K270301', 'K', 6, 106);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-07', '2024-11-03', 300, 290, 0, 'B040603', 'B', 7, 107);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (35, '2024-11-08', '2024-11-03', 350, 340, 0, 'B040603', 'B', 8, 108);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (40, '2024-11-09', '2024-11-03', 400, 395, 0, 'B040603', 'B', 9, 109);
-INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (50, '2024-11-10', '2024-11-03', 500, 490, 0, 'B040603', 'B', 10, 110);
+-- CYCLE COUNTING FOR RACK A
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-06-15', '2024-05-15', 100, 100, 0, 'A010101', 'A', 1, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-06-15', '2024-05-15', 100, 100, 0, 'A010102', 'A', 2, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-06-15', '2024-05-15', 100, 100, 0, 'A010103', 'A', 3, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-06-15', '2024-05-15', 100, 100, 0, 'A010201', 'A', 4, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-06-15', '2024-05-15', 100, 100, 0, 'A010202', 'A', 5, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-06-15', '2024-05-15', 100, 100, 0, 'A010203', 'A', 6, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-06-15', '2024-05-15', 100, 100, 0, 'A010301', 'A', 7, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-06-15', '2024-05-15', 100, 100, 0, 'A010302', 'A', 8, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-06-15', '2024-05-15', 100, 100, 0, 'A010303', 'A', 9, 482);
+
+-- CYCLE COUNTING FOR RACK B
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-07-01', '2024-06-03', 120, 120, 0, 'B020101', 'B', 19, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-07-01', '2024-06-03', 120, 120, 0, 'B020102', 'B', 20, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-07-01', '2024-06-03', 120, 120, 0, 'B020103', 'B', 21, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-07-01', '2024-06-03', 120, 120, 0, 'B020201', 'B', 22, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-07-01', '2024-06-03', 120, 120, 0, 'B020202', 'B', 23, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-07-01', '2024-06-03', 120, 120, 0, 'B020203', 'B', 24, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-07-01', '2024-06-03', 120, 120, 0, 'B020301', 'B', 25, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-07-01', '2024-06-03', 120, 120, 0, 'B020302', 'B', 26, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-07-01', '2024-06-03', 120, 120, 0, 'B020303', 'B', 27, 739);
+
+-- CYCLE COUNTING FOR RACK C
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030101', 'C', 37, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030102', 'C', 38, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030103', 'C', 39, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030201', 'C', 40, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030202', 'C', 41, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030203', 'C', 42, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030301', 'C', 43, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030302', 'C', 44, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030303', 'C', 45, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030401', 'C', 46, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030402', 'C', 47, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030403', 'C', 48, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030501', 'C', 49, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030502', 'C', 50, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030503', 'C', 51, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030601', 'C', 52, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030602', 'C', 53, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-07-17', '2024-06-17', 150, 150, 0, 'C030603', 'C', 54, 739);
+
+-- CYCLE COUNTING FOR RACK D
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040101', 'D', 55, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040102', 'D', 56, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040103', 'D', 57, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040201', 'D', 58, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040202', 'D', 59, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040203', 'D', 60, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040301', 'D', 61, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040302', 'D', 62, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040303', 'D', 63, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040401', 'D', 64, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040402', 'D', 65, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040403', 'D', 66, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040501', 'D', 67, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-01', '2024-07-01', 120, 120, 0, 'D040502', 'D', 68, 156);
+
+-- CYCLE COUNTING FOR RACK E
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-15', '2024-07-15', 120, 120, 0, 'E050101', 'E', 73, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-15', '2024-07-15', 120, 120, 0, 'E050102', 'E', 74, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-15', '2024-07-15', 120, 120, 0, 'E050103', 'E', 75, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-15', '2024-07-15', 120, 120, 0, 'E050201', 'E', 76, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-15', '2024-07-15', 120, 120, 0, 'E050202', 'E', 77, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-15', '2024-07-15', 120, 120, 0, 'E050203', 'E', 78, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-15', '2024-07-15', 120, 120, 0, 'E050301', 'E', 79, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-15', '2024-07-15', 120, 120, 0, 'E050302', 'E', 80, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-08-15', '2024-07-15', 120, 120, 0, 'E050303', 'E', 81, 824);
+
+-- CYCLE COUNTING FOR RACK F
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-09-02', '2024-08-01', 120, 120, 0, 'F060101', 'F', 91, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-09-02', '2024-08-01', 120, 120, 0, 'F060102', 'F', 92, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-09-02', '2024-08-01', 120, 120, 0, 'F060103', 'F', 93, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-09-02', '2024-08-01', 120, 120, 0, 'F060201', 'F', 94, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-09-02', '2024-08-01', 120, 120, 0, 'F060202', 'F', 95, 824);
+
+-- CYCLE COUNTING FOR RACK G
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-09-16', '2024-08-15', 120, 119, 1, 'G070101', 'G', 109, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-09-16', '2024-08-15', 120, 120, 0, 'G070102', 'G', 110, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-09-16', '2024-08-15', 120, 115, 5, 'G070103', 'G', 111, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-09-16', '2024-08-15', 120, 120, 0, 'G070201', 'G', 112, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-09-16', '2024-08-15', 120, 119, 1, 'G070202', 'G', 113, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-09-16', '2024-08-15', 120, 120, 0, 'G070203', 'G', 114, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-09-16', '2024-08-15', 120, 120, 0, 'G070301', 'G', 115, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-09-16', '2024-08-15', 120, 120, 0, 'G070302', 'G', 116, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-09-16', '2024-08-15', 120, 120, 0, 'G070303', 'G', 117, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-09-16', '2024-08-15', 120, 119, 1, 'G070401', 'G', 118, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-09-16', '2024-08-15', 120, 100, 20, 'G070402', 'G', 119, 391);
+
+-- CYCLE COUNTING FOR RACK H
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-10-01', '2024-09-02', 100, 90, 10, 'H080101', 'H', 127, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-10-01', '2024-09-02', 100, 99, 1, 'H080102', 'H', 128, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-10-01', '2024-09-02', 100, 100, 0, 'H080103', 'H', 129, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-10-01', '2024-09-02', 100, 100, 0, 'H080201', 'H', 130, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-10-01', '2024-09-02', 100, 98, 2, 'H080202', 'H', 131, 507);
+
+-- CYCLE COUNTING FOR RACK I
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 150, 0, 'I090101', 'I', 145, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 150, 0, 'I090102', 'I', 146, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 150, 0, 'I090103', 'I', 147, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 125, 25, 'I090201', 'I', 148, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 150, 0, 'I090202', 'I', 149, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 150, 0, 'I090203', 'I', 150, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 110, 40, 'I090301', 'I', 151, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 150, 0, 'I090302', 'I', 152, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 149, 1, 'I090303', 'I', 153, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 149, 1, 'I090401', 'I', 154, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 149, 1, 'I090402', 'I', 155, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 150, 0, 'I090403', 'I', 156, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 150, 0, 'I090501', 'I', 157, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 145, 5, 'I090502', 'I', 158, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 145, 5, 'I090503', 'I', 159, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 145, 5, 'I090601', 'I', 160, 507);
+
+-- CYCLE COUNTING FOR RACK J
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 128, 2, 'J100101', 'J', 163, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 130, 0, 'J100102', 'J', 164, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 130, 0, 'J100103', 'J', 165, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 127, 3, 'J100201', 'J', 166, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 130, 0, 'J100202', 'J', 167, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 128, 2, 'J100203', 'J', 168, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 128, 2, 'J100301', 'J', 169, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 128, 2, 'J100302', 'J', 170, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 130, 0, 'J100303', 'J', 171, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 130, 0, 'J100401', 'J', 172, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 130, 0, 'J100402', 'J', 173, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 127, 3, 'J100403', 'J', 174, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 127, 3, 'J100501', 'J', 175, 268);
+
+-- CYCLE COUNTING FOR RACK K
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 110, 109, 1, 'K110101', 'K', 181, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 110, 105, 5, 'K110102', 'K', 182, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 110, 110, 0, 'K110103', 'K', 183, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 110, 109, 1, 'K110201', 'K', 184, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 110, 105, 5, 'K110202', 'K', 185, 268);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 110, 110, 0, 'K110203', 'K', 186, 268);
+
+-- CYCLE COUNTING FOR RACK L
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-16', '2024-10-01', 120, 100, 20, 'L120101', 'L', 199, 945);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-16', '2024-10-01', 120, 120, 0, 'L120102', 'L', 200, 945);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-16', '2024-10-01', 120, 120, 0, 'L120103', 'L', 201, 945);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-16', '2024-10-01', 120, 100, 20, 'L120201', 'L', 202, 945);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-16', '2024-10-01', 120, 100, 20, 'L120202', 'L', 203, 945);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-16', '2024-10-01', 120, 100, 20, 'L120203', 'L', 204, 945);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-16', '2024-10-01', 120, 100, 20, 'L120301', 'L', 205, 945);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-16', '2024-10-01', 120, 120, 0, 'L120302', 'L', 206, 945);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (12, '2024-11-16', '2024-10-01', 120, 119, 1, 'L120303', 'L', 207, 945);
+
+-- CYCLE COUNTING FOR RACK M
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 158, 2, 'M010101', 'M', 217, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 160, 0, 'M010102', 'M', 218, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 155, 5, 'M010103', 'M', 219, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 158, 2, 'M010104', 'M', 220, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 158, 2, 'M010201', 'M', 221, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 160, 0, 'M010202', 'M', 222, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 160, 0, 'M010203', 'M', 223, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 155, 5, 'M010204', 'M', 224, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 160, 0, 'M010301', 'M', 225, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 160, 0, 'M010302', 'M', 226, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 158, 2, 'M010303', 'M', 227, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-11-16', '2024-10-01', 160, 158, 2, 'M010304', 'M', 228, 613);
+
+-- CYCLE COUNTING FOR RACK N
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (45, '2024-11-16', '2024-10-01', 145, 145, 0, 'N020101', 'N', 241, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (45, '2024-11-16', '2024-10-01', 145, 145, 0, 'N020102', 'N', 242, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (45, '2024-11-16', '2024-10-01', 145, 145, 0, 'N020103', 'N', 243, 613);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (45, '2024-11-16', '2024-10-01', 145, 145, 0, 'N020104', 'N', 244, 613);
+
+-- CYCLE COUNTING FOR RACK O
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030101', 'O', 265, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030102', 'O', 266, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030103', 'O', 267, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030104', 'O', 268, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030201', 'O', 269, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030202', 'O', 270, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030203', 'O', 271, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030204', 'O', 272, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030301', 'O', 273, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030302', 'O', 274, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 110, 10, 'O030303', 'O', 275, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 110, 10, 'O030304', 'O', 276, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030401', 'O', 277, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030402', 'O', 278, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 110, 10, 'O030403', 'O', 279, 372);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030404', 'O', 280, 372);
+
 
 
 Si al registro de diferencias
+
 Pallets: 0 - 126
 
 

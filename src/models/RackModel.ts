@@ -17,7 +17,10 @@ enum RackNames {
     I = 'I',
     J = 'J',
     K = 'K',
-    L = 'L',   
+    L = 'L',
+    M = 'M',
+    N = 'N',
+    O = 'O', 
 }
 
 // Interface for the Rack Model
