@@ -34,12 +34,12 @@ class ConteoController extends AbstractController {
 
         // Mobile App endpoints
         this.router.get("/consultaUsuario/:numEmp", this.getSpecificEmployee.bind(this));
-        this.router.get("/posicionesContadas", this.getUncountedPositions.bind(this));
+        this.router.get("/posicionesNoContadas/:idRack", this.getUncountedPositions.bind(this));
         this.router.get("/infoPosicion/:idPos", this.getLatestConteoForPosition.bind(this));
         this.router.post("/crearConteo", this.postCountingReport.bind(this));
 
         // Web App endpoints
-        this.router.get("/numeroRacks/:ubi/:fechaConteo", this.getRackCompleteness.bind(this)); // 1° filter
+        this.router.get("/numeroRacks/:ubi/:fechaConteo", this.getRackCompleteness.bind(this)); // 1° filter **
         this.router.get("/numeroIncidencias/:ubi/:fechaConteo", this.getNumberOfIncidences.bind(this)); // 2° filter
         this.router.get("/numeroConteos/:ubi/:fechaConteo", this.getNumberOfCycleCountings.bind(this)); // 3° filter        
         this.router.get("/productoDeUbicacion/:ubi", this.getProductByLocation.bind(this));
@@ -87,9 +87,16 @@ class ConteoController extends AbstractController {
     // Obtener posiciones no contadas
     private async getUncountedPositions(req: Request, res: Response) {
         try {
+
+            const { idRack } = req.params;
+            const letra = idRack.charAt(0);
+
             const uncountedPositions = await db.Posicion.findAll({
                 where: {
                     Contado: false,
+                    IdPos: {
+                        [Op.like]: `${letra}%`,
+                    },
                 },
                 attributes: ['IdPos'],
             });
@@ -209,6 +216,8 @@ class ConteoController extends AbstractController {
             res.status(500).send("Internal server error: " + error);
         }
     }
+
+    
     private async getProductByLocation(req: Request, res: Response) {
         try {
             const { ubi } = req.params;
