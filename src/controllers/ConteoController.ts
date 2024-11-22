@@ -7,6 +7,13 @@ import AbstractController from "./AbstractController";
 import db from "../models";
 import { Op, Model, Sequelize } from "sequelize";
 
+
+interface Posicion {
+    IdPos: number;
+    Contado: boolean;
+}
+
+
 // Define the ConteoController class
 class ConteoController extends AbstractController {
     // Singleton
@@ -27,10 +34,9 @@ class ConteoController extends AbstractController {
 
         // Mobile App endpoints
         this.router.get("/consultaUsuario/:numEmp", this.getSpecificEmployee.bind(this));
-        this.router.get("/consultaConteo/:fecha", this.getCycleCounting.bind(this));
-        this.router.get("/obtenCajas/:ubi", this.getBoxesByLocation.bind(this));
+        this.router.get("/posicionesContadas", this.getUncountedPositions.bind(this));
+        this.router.get("/infoPosicion/:idPos", this.getLatestConteoForPosition.bind(this));
         this.router.post("/crearConteo", this.postCountingReport.bind(this));
-        this.router.put("/actualizarConteo", this.putCycleCounting.bind(this));
 
         // Web App endpoints
         this.router.get("/numeroRacks/:ubi/:fechaConteo", this.getRackCompleteness.bind(this)); // 1° filter
@@ -78,25 +84,48 @@ class ConteoController extends AbstractController {
         }
     }
 
-    private async getCycleCounting(req: Request, res: Response) {
+    // Obtener posiciones no contadas
+    private async getUncountedPositions(req: Request, res: Response) {
         try {
-            const { fecha } = req.params;
-
-            const conteo = await db.Conteo.findAll({
-                where: { FechaConteo: fecha },
+            const uncountedPositions = await db.Posicion.findAll({
+                where: {
+                    Contado: false,
+                },
+                attributes: ['IdPos'],
             });
 
-            if (conteo) {
-                res.status(200).json(conteo);
-            } else {
-                res.status(404).send("No hay conteos para esta fecha");
-            }
-        } catch (error: any) {
+            const positionsList = uncountedPositions.map((pos:Posicion) => pos.IdPos);
+
+            res.status(200).json({ positions: positionsList });
+        } catch (error) {
             console.log(error);
-            res.status(500).send("Internal server error: " + error);
+            res.status(500).send('Internal server error: ' + error);
         }
     }
 
+    // Obtener valores más actuales para un IdPos
+    private async getLatestConteoForPosition(req: Request, res: Response) {
+        try {
+            const { idPos } = req.params;
+
+            const latestRecord = await db.Conteo.findOne({
+                where: {
+                    IdPos: idPos,
+                },
+                attributes: ['Pallets', 'CajasFisico', 'IdProducto'],
+                order: [['FechaConteo', 'DESC']],
+            });
+
+            if (!latestRecord) {
+                res.status(400).send('No se encontraron registros para IdPos')
+            }
+
+            res.status(200).json(latestRecord);
+        } catch (error) {
+            console.log(error);
+            res.status(500).send('Internal server error: ' + error);
+        }
+    }
 
     private async postCountingReport(req: Request, res: Response) {
         try {
@@ -105,52 +134,13 @@ class ConteoController extends AbstractController {
             await db.Conteo.create(req.body);
 
             console.log("Reporte de conteo creado exitosamente");
-            res.status(201).send("<h1>Reporte creado</h1>");
+            res.status(201).send("Reporte creado");
         } catch (err) {
             console.log(err);
             res.status(500).send("Internal server error: " + err);
         }
     }
 
-    private async getBoxesByLocation(req: Request, res: Response) {
-        try {
-            const { ubi } = req.params;
-
-            const totalCajas = await db.Conteo.findAll({
-                include: {
-                    model: db.Posicion,
-                    as: 'Posicion',
-                    where: { Ubicacion: ubi },
-                    attributes: [],
-                },
-                attributes: [[db.Sequelize.fn('SUM', db.Sequelize.col('CajasFisico')), 'TotalCajas']]
-            });
-            res.status(200).json(totalCajas[0]);
-        } catch (err) {
-            console.log(err);
-            res.status(500).send("Internal server error: " + err);
-        }
-    }
-
-    private async putCycleCounting(req: Request, res: Response) {
-        try {
-            const { IdPos, numEmp, valorNuevo } = req.body;
-
-            await db.Conteo.update(
-                { CajasFisico: valorNuevo },
-                { where: { 
-                    IdPos: IdPos,
-                    NumEmpleado: numEmp 
-                    }
-                }
-            );
-
-            res.status(200).send("Conteo actualizado exitosamente");
-        } catch (err) {
-            console.log(err);
-            res.status(500).send("Internal server error: " + err);
-        }
-    }
 
     // Function to get the completeness of the racks (1° filter)
     private async getRackCompleteness(req: Request, res: Response) {
