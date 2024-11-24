@@ -40,14 +40,14 @@ class ConteoController extends AbstractController {
 
         // Web App endpoints
         this.router.get("/numeroRacks/:ubi/:fechaConteo", this.getRackCompleteness.bind(this)); // 1° filter **
-        this.router.get("/numeroIncidencias/:ubi/:fechaConteo", this.getNumberOfIncidences.bind(this)); // 2° filter
-        this.router.get("/numeroConteos/:ubi/:fechaConteo", this.getNumberOfCycleCountings.bind(this)); // 3° filter        
+        this.router.get("/numeroIncidencias/:ubi/:fechaConteo", this.getNumberOfIncidences.bind(this)); // 2° filter **
+        this.router.get("/numeroConteos/:ubi/:fechaConteo", this.getNumberOfCycleCountings.bind(this)); // 3° filter  **     
         this.router.get("/productoDeUbicacion/:ubi", this.getProductByLocation.bind(this));
         this.router.get("/descripcionProducto/:prod", this.getDescriptionByName.bind(this));
-        this.router.get("/incidenciasPorMes/:anio", this.getIncidenciaByMonth.bind(this));
+        this.router.get("/incidenciasPorMes/:anio", this.getIncidenciaByMonth.bind(this)); // **
         this.router.get("/productosMasDiscrepancia", this.getMostDiscrepancyProductTop10.bind(this));
         this.router.get("/porcentajeAlmacen", this.getWarehouseCompleteness.bind(this));
-        this.router.get("/top10Productos", this.getTop10Products.bind(this));
+        this.router.get("/top10Productos", this.getTop10Products.bind(this)); // **
 
     }
 
@@ -154,38 +154,23 @@ class ConteoController extends AbstractController {
         try {
             const { ubi, fechaConteo } = req.params;
     
-            const completeness = await db.Conteo.findAll({
-                include: [
-                    {
-                        model: db.Rack,
-                        as: 'Rack',
-                        attributes: ['IdRack', 'Capacidad'], // Asegúrate de incluir estos atributos
-                    },
-                    {
-                        model: db.Posicion,
-                        as: 'Posicion',
-                        where: { Ubicacion: ubi },
-                        attributes: [], // Excluye atributos de Posición en el resultado
-                    },
-                ],
-                where: {
-                    FechaConteo: fechaConteo,
-                    [Op.and]: db.Sequelize.where(
-                        db.Sequelize.literal(`SUBSTRING(Conteo.IdPos, 1, 1)`),
-                        db.Sequelize.col("Rack.IdRack")
-                    ),
-                },
-                attributes: [
-                    'Rack.IdRack', // Devuelve el ID del Rack
-                    [
-                        db.Sequelize.literal(`ROUND(((SUM(Conteo.CajasFisico) / Rack.Capacidad) * 8) / 10, 0)`),
-                        'Completeness',
-                    ],
-                ],
-                group: ['Rack.IdRack', 'Rack.Capacidad'], // Agrupa por Rack y su capacidad
-                raw: true,
-            });
-    
+            const completeness = await db.sequelize.query(
+                `
+                SELECT 
+                    Rack.IdRack AS IdRack,
+                    ROUND(((SUM(Conteo.CajasFisico) / Rack.Capacidad) * 8) / 10, 0) AS Completeness
+                FROM Conteo
+                JOIN Rack ON LEFT(Conteo.IdPos, 1) = Rack.IdRack
+                JOIN Posicion ON Conteo.IdPos = Posicion.IdPos
+                WHERE Posicion.Ubicacion = :ubi AND Conteo.FechaConteo = :fechaConteo
+                GROUP BY Rack.IdRack, Rack.Capacidad
+                `,
+                {
+                    replacements: { ubi, fechaConteo },
+                    type: db.Sequelize.QueryTypes.SELECT,
+                }
+            );
+                
             res.status(200).json(completeness);
         } catch (err) {
             console.error(err);
@@ -196,28 +181,75 @@ class ConteoController extends AbstractController {
     // Function to get the number of incidences (2° filter)
     private async getNumberOfIncidences(req: Request, res: Response) {
         try {
-                const { ubi, fechaConteo } = req.params;
+            
+            const { ubi, fechaConteo } = req.params;
 
-        const incidencias = await db.Conteo.count({
-            include: {
-                model: db.Posicion,
-                as: 'Posicion',
-                where: { Ubicacion: ubi }
-            },
-            where: {
-                FechaConteo: fechaConteo,
-                CajasSistema: { [db.Sequelize.Op.ne]: db.Sequelize.col('CajasFisico') }
-            }
-        });
+            const incidencias = await db.sequelize.query(
+                `
+                SELECT COUNT(*) AS Incidencias
+                FROM Conteo
+                INNER JOIN Posicion ON Conteo.IdPos = Posicion.IdPos
+                WHERE Posicion.Ubicacion = :ubi
+                    AND Conteo.FechaConteo = :fechaConteo
+                    AND Conteo.CajasSistema != Conteo.CajasFisico;
+                `,
+                {
+                    replacements: { ubi, fechaConteo },
+                    type: db.Sequelize.QueryTypes.SELECT,
+                }
+            );
 
-        res.status(200).json({ Incidencias: incidencias });
+        res.status(200).json(incidencias);
         } catch (error) {
             console.log(error);
             res.status(500).send("Internal server error: " + error);
         }
     }
 
+    // Function to get the number of cycle countings (3° filter)
+    private async getNumberOfCycleCountings(req: Request, res: Response) {
+        try {
+            const { ubi, fechaConteo } = req.params;
     
+            // Obtener los racks dentro de la ubicación especificada
+            const cycleCountings = await db.sequelize.query(
+                `
+                SELECT 
+                    Rack.IdRack AS RackId,
+                    (SELECT COUNT(*) 
+                    FROM Posicion 
+                    WHERE SUBSTRING(Posicion.IdPos, 1, 1) = Rack.IdRack
+                    AND Posicion.Ubicacion = :ubi) AS TotalPositions,
+                    COUNT(Conteo.IdConteo) AS CompletedCountings,
+                    ROUND(
+                        (COUNT(Conteo.IdConteo) * 8.0 / 
+                        (SELECT COUNT(*) 
+                        FROM Posicion 
+                        WHERE SUBSTRING(Posicion.IdPos, 1, 1) = Rack.IdRack
+                            AND Posicion.Ubicacion = :ubi)), 
+                        0
+                    ) AS CycleCountCompleteness
+                FROM Conteo
+                INNER JOIN Posicion ON Conteo.IdPos = Posicion.IdPos
+                INNER JOIN Rack ON SUBSTRING(Conteo.IdPos, 1, 1) = Rack.IdRack
+                WHERE Conteo.FechaConteo = :fechaConteo
+                AND Posicion.Ubicacion = :ubi
+                GROUP BY Rack.IdRack;
+                `,
+                {
+                    replacements: { ubi, fechaConteo },
+                    type: db.Sequelize.QueryTypes.SELECT,
+                }
+            );
+    
+            res.status(200).json(cycleCountings);
+        } catch (error) {
+            console.error(error);
+            res.status(500).send("Internal server error: " + error);
+        }
+    }
+
+
     private async getProductByLocation(req: Request, res: Response) {
         try {
             const { ubi } = req.params;
@@ -255,74 +287,6 @@ class ConteoController extends AbstractController {
         }
     }
 
-    private async getNumberOfCycleCountings(req: Request, res: Response) {
-        try {
-            const { ubi, fechaConteo } = req.params;
-    
-            // Obtener los racks dentro de la ubicación especificada
-            const cycleCountings = await db.Conteo.findAll({
-                include: [
-                    {
-                        model: db.Posicion,
-                        as: 'Posicion',
-                        where: { Ubicacion: ubi },
-                        attributes: ['IdPos'], // Obtener IdPos para hacer el split y vincular el Rack
-                    },
-                    {
-                        model: db.Rack,
-                        as: 'Rack',
-                        attributes: ['IdRack'], // Incluir el Rack al que pertenece
-                    },
-                ],
-                where: {
-                    FechaConteo: fechaConteo,
-                    [Op.and]: db.Sequelize.where(
-                        db.Sequelize.literal(`SUBSTRING(Conteo.IdPos, 1, 1)`),
-                        db.Sequelize.col("Rack.IdRack")
-                    ),
-                },
-                attributes: [
-                    'Rack.IdRack', // Identificar Rack
-                    [
-                        // Total de posiciones para cada rack (conteos cíclicos esperados)
-                        db.Sequelize.literal(`
-                            (SELECT COUNT(*) 
-                             FROM Posicion 
-                             WHERE SUBSTRING(Posicion.IdPos, 1, 1) = Rack.IdRack
-                               AND Posicion.Ubicacion = '${ubi}')
-                        `),
-                        'TotalPositions',
-                    ],
-                    [
-                        // Conteos realizados hasta la fecha específica
-                        db.Sequelize.literal(`COUNT(Conteo.IdConteo)`),
-                        'CompletedCountings',
-                    ],
-                    [
-                        // Porcentaje completado ponderado entre 0 y 8
-                        db.Sequelize.literal(`
-                            ROUND(
-                                ((COUNT(Conteo.IdConteo) / 
-                                  (SELECT COUNT(*) 
-                                   FROM Posicion 
-                                   WHERE SUBSTRING(Posicion.IdPos, 1, 1) = Rack.IdRack 
-                                     AND Posicion.Ubicacion = '${ubi}')) * 8), 
-                                0
-                            )
-                        `),
-                        'CycleCountCompleteness',
-                    ],
-                ],
-                group: ['Rack.IdRack'], // Agrupar por Rack para obtener resultados por cada uno
-                raw: true,
-            });
-    
-            res.status(200).json(cycleCountings);
-        } catch (error) {
-            console.error(error);
-            res.status(500).send("Internal server error: " + error);
-        }
-    }
 
     private async getDescriptionByName(req: Request, res: Response) {
         try {
