@@ -39,9 +39,9 @@ class ConteoController extends AbstractController {
         this.router.post("/crearConteo", this.postCountingReport.bind(this));
 
         // Web App endpoints
-        this.router.get("/numeroRacks/:ubi/:fechaConteo", this.getRackCompleteness.bind(this)); // 1° filter **
-        this.router.get("/numeroIncidencias/:ubi/:fechaConteo", this.getNumberOfIncidences.bind(this)); // 2° filter **
-        this.router.get("/numeroConteos/:ubi/:fechaConteo", this.getNumberOfCycleCountings.bind(this)); // 3° filter  **     
+        this.router.get("/numeroRacks/:ubi/:fechaConteo", this.getRackCompleteness.bind(this)); // 1° filter
+        this.router.get("/numeroIncidencias/:ubi/:fechaConteo", this.getNumberOfIncidences.bind(this)); // 2° filter
+        this.router.get("/numeroConteos/:ubi/:fechaConteo", this.getNumberOfCycleCountings.bind(this)); // 3° filter
         this.router.get("/productoDeUbicacion/:ubi", this.getProductByLocation.bind(this));
         this.router.get("/descripcionProducto/:prod", this.getDescriptionByName.bind(this));
         this.router.get("/incidenciasPorMes/:anio", this.getIncidenciaByMonth.bind(this)); // **
