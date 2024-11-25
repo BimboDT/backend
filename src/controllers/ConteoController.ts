@@ -158,7 +158,8 @@ class ConteoController extends AbstractController {
                 `
                 SELECT 
                     Rack.IdRack AS IdRack,
-                    ROUND(((SUM(Conteo.CajasFisico) / Rack.Capacidad) * 8) / 10, 0) AS Completeness
+                    ROUND(((SUM(Conteo.CajasFisico) / Rack.Capacidad) * 8) / 10, 0) AS Completeness,
+                    SUM(Conteo.CajasFisico) as SumaTotal
                 FROM Conteo
                 JOIN Rack ON LEFT(Conteo.IdPos, 1) = Rack.IdRack
                 JOIN Posicion ON Conteo.IdPos = Posicion.IdPos
@@ -186,12 +187,13 @@ class ConteoController extends AbstractController {
 
             const incidencias = await db.sequelize.query(
                 `
-                SELECT COUNT(*) AS Incidencias
+                SELECT COUNT(*) AS Incidencias, IdRack
                 FROM Conteo
                 INNER JOIN Posicion ON Conteo.IdPos = Posicion.IdPos
                 WHERE Posicion.Ubicacion = :ubi
                     AND Conteo.FechaConteo = :fechaConteo
-                    AND Conteo.CajasSistema != Conteo.CajasFisico;
+                    AND Conteo.CajasSistema != Conteo.CajasFisico
+                GROUP BY IdRack;
                 `,
                 {
                     replacements: { ubi, fechaConteo },
