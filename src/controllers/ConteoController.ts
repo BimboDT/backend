@@ -354,28 +354,34 @@ class ConteoController extends AbstractController {
             const { anio } = req.params;
 
             const incidenciasPorMes: { [key: string]: number } = {};
-
+            
             for (let mes = 0; mes < 12; mes++) {
                 const fechaInicio = new Date(parseInt(anio), mes, 1);
                 const fechaFin = new Date(parseInt(anio), mes + 1, 0);
-
+            
+                // Convertir fechas a formato YYYY-MM-DD para trabajar con la fecha únicamente
+                const inicioStr = fechaInicio.toISOString().split("T")[0];
+                const finStr = fechaFin.toISOString().split("T")[0];
+            
                 const conteos = await db.Conteo.findAll({
                     where: {
-                        FechaConteo: {
-                            [Op.between]: [fechaInicio, fechaFin]
-                        }
-                    }
+                        [Op.and]: [
+                            Sequelize.literal(`DATE(FechaConteo) >= '${inicioStr}'`),
+                            Sequelize.literal(`DATE(FechaConteo) <= '${finStr}'`)
+                        ]
+                    },
+                    raw: true // Opcional, mejora el rendimiento
                 });
-
+            
                 const incidencias = conteos.reduce((count: any, conteo: any) => {
                     return conteo.CajasSistema !== conteo.CajasFisico ? count + 1 : count;
                 }, 0);
-
+            
                 const nombreMes = fechaInicio.toLocaleString('es-ES', { month: 'long' });
                 incidenciasPorMes[nombreMes] = incidencias;
             }
-
-            res.status(200).json(incidenciasPorMes);
+            
+            res.status(200).json(incidenciasPorMes);            
 
         } catch (error: any) {
             console.log(error);
@@ -387,33 +393,30 @@ class ConteoController extends AbstractController {
         try {
             // Obtener las incidencias agrupadas por producto
             const top10DiscrepancyProducts = await db.Conteo.findAll({
-                attributes: [
-                    "IdProducto",
-                    [Sequelize.fn("SUM", Sequelize.literal("ABS(CajasFisico - CajasSistema)")), "TotalDiscrepancia"]
+                include: [
+                    {
+                        model: db.Producto,
+                        as: "Producto",
+                        attributes: ["Nombre"] // Obtenemos solo el nombre del producto
+                    }
                 ],
-                group: ["IdProducto"],
-                order: [[Sequelize.literal("TotalDiscrepancia"), "DESC"]],
-                limit: 10,
-                raw: true
+                attributes: [
+                    [Sequelize.col("Producto.Nombre"), "NombreProducto"], // Agrupamos por nombre del producto
+                    [Sequelize.fn("SUM", Sequelize.literal("ABS(CajasFisico - CajasSistema)")), "TotalDiscrepancia"] // Calculamos la discrepancia total
+                ],
+                group: ["Producto.Nombre"], // Agrupamos por el nombre del producto
+                order: [[Sequelize.literal("TotalDiscrepancia"), "DESC"]], // Ordenamos por discrepancia descendente
+                limit: 10, // Limitar al top 10
+                raw: false
             });
-
-            const productIds = top10DiscrepancyProducts.map((product: any) => product.IdProducto);
-
-            const productNames = await db.Producto.findAll({
-                where: { IdProducto: productIds },
-                attributes: ["IdProducto", "Nombre"],
-                raw: true
-            });
-
-            const formattedResults = top10DiscrepancyProducts.map((product: any) => {
-                const productName = productNames.find((p: any) => p.IdProducto === product.IdProducto)?.Nombre || "Sin nombre";
-                return {
-                    nombreProducto: productName,
-                    totalDiscrepancia: product.TotalDiscrepancia
-                };
-            });
-
+            
+            const formattedResults = top10DiscrepancyProducts.map((product: any) => ({
+                nombreProducto: product.get("NombreProducto"),
+                totalDiscrepancia: product.get("TotalDiscrepancia")
+            }));
+            
             res.status(200).json(formattedResults);
+            
             
         } catch (error: any) {
             console.log(error);
@@ -454,35 +457,32 @@ class ConteoController extends AbstractController {
 
     private async getTop10Products(req: Request, res: Response) { 
         try {
-            const top10Products = await db.Conteo.findAll({
-                attributes: [
-                    "IdProducto",
-                    [Sequelize.fn("SUM", Sequelize.col("CajasFisico")), "TotalCajasFisico"]
+
+            const top10ProductsByName = await db.Conteo.findAll({
+                include: [
+                    {
+                        model: db.Producto,
+                        as: "Producto", // Asegúrate de tener la relación configurada en el modelo
+                        attributes: ["Nombre"] // Incluimos solo el nombre del producto
+                    }
                 ],
-                group: ["IdProducto"],
-                order: [[Sequelize.literal("TotalCajasFisico"), "DESC"]],
-                limit: 10,
-                raw: true 
+                attributes: [
+                    [Sequelize.col("Producto.Nombre"), "NombreProducto"], // Agrupamos por nombre
+                    [Sequelize.fn("SUM", Sequelize.col("CajasFisico")), "TotalCajasFisico"] // Sumamos la cantidad física
+                ],
+                group: ["Producto.Nombre"], // Agrupamos por el nombre del producto
+                order: [[Sequelize.literal("TotalCajasFisico"), "DESC"]], // Ordenamos por cantidad total
+                limit: 10, // Limitar al top 10
+                raw: false // Esto permite acceder a las asociaciones correctamente
             });
             
-            const productIds = top10Products.map((product: any) => product.IdProducto);
-            
-            const productNames = await db.Producto.findAll({
-                where: { IdProducto: productIds },
-                attributes: ["IdProducto", "Nombre"],
-                raw: true 
-            });
-            
-            const formattedResults = top10Products.map((product: any) => {
-                const productName = productNames.find((p: any) => p.IdProducto === product.IdProducto)?.Nombre || "Sin nombre";
-                return {
-                    nombreProducto: productName,
-                    totalCajasFisico: product.TotalCajasFisico
-                };
-            });
+            const formattedResults = top10ProductsByName.map((product: any) => ({
+                nombreProducto: product.get("NombreProducto"), // Obtenemos el nombre desde la consulta
+                totalCajasFisico: product.get("TotalCajasFisico") // Obtenemos la suma total
+            }));
             
             res.status(200).json(formattedResults);
-            
+
         } catch (error: any) { 
             console.error(error);
             res.status(500).send("Internal server error: " + error);
