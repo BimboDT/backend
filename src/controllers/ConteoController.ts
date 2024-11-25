@@ -44,10 +44,10 @@ class ConteoController extends AbstractController {
         this.router.get("/numeroConteos/:ubi/:fechaConteo", this.getNumberOfCycleCountings.bind(this)); // 3° filter
         this.router.get("/productoDeUbicacion/:ubi", this.getProductByLocation.bind(this));
         this.router.get("/descripcionProducto/:prod", this.getDescriptionByName.bind(this));
-        this.router.get("/incidenciasPorMes/:anio", this.getIncidenciaByMonth.bind(this)); // **
+        this.router.get("/incidenciasPorMes/:anio", this.getIncidenciaByMonth.bind(this));
         this.router.get("/productosMasDiscrepancia", this.getMostDiscrepancyProductTop10.bind(this));
         this.router.get("/porcentajeAlmacen", this.getWarehouseCompleteness.bind(this));
-        this.router.get("/top10Productos", this.getTop10Products.bind(this)); // **
+        this.router.get("/top10Productos", this.getTop10Products.bind(this));
 
     }
 
