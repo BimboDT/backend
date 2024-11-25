@@ -194,6 +194,11 @@ class ConteoController extends AbstractController {
                     AND Conteo.CajasSistema != Conteo.CajasFisico
                 LEFT JOIN Posicion ON Conteo.IdPos = Posicion.IdPos
                     AND Posicion.Ubicacion = :ubi
+                WHERE Rack.IdRack IN (
+                    SELECT DISTINCT SUBSTRING(IdPos, 1, 1)
+                    FROM Posicion
+                    WHERE Ubicacion = :ubi
+                )
                 GROUP BY Rack.IdRack;
                 `,
                 {
