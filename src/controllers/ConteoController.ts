@@ -37,6 +37,7 @@ class ConteoController extends AbstractController {
         this.router.get("/posicionesNoContadas/:idRack", this.getUncountedPositions.bind(this));
         this.router.get("/infoPosicion/:idPos", this.getLatestConteoForPosition.bind(this));
         this.router.post("/crearConteo", this.postCountingReport.bind(this));
+        this.router.put("/actualizarPos", this.updatePosition.bind(this));
 
         // Web App endpoints
         this.router.get("/numeroRacks/:ubi/:fechaConteo", this.getRackCompleteness.bind(this)); // 1° filter
@@ -142,6 +143,23 @@ class ConteoController extends AbstractController {
 
             console.log("Reporte de conteo creado exitosamente");
             res.status(201).send("Reporte creado");
+        } catch (err) {
+            console.log(err);
+            res.status(500).send("Internal server error: " + err);
+        }
+    }
+
+    private async updatePosition(req: Request, res: Response) {
+        try {
+            const { idPos, contando } = req.body;
+
+            // Update the position
+            await db.Posicion.update(
+                {Contando: contando},
+                {where: {IdPos: idPos}}
+            );
+
+            res.status(200).send("Posición actualizada");
         } catch (err) {
             console.log(err);
             res.status(500).send("Internal server error: " + err);
