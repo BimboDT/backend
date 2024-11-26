@@ -30,7 +30,7 @@ INSERT INTO Rack VALUES ('O', 500);
 
 
 -- Datos para la tabla Posicion
--- RACK A 
+-- RACK A
 INSERT INTO Posicion VALUES ('A010101', 'Reserva2', 'A1', 7, false, true);
 INSERT INTO Posicion VALUES ('A010102', 'Reserva2', 'A1', 7, false, true);
 INSERT INTO Posicion VALUES ('A010103', 'Reserva2', 'A1', 7, false, true);
@@ -350,7 +350,7 @@ INSERT INTO Posicion VALUES ('O030604', 'Reserva1', 'O3', 22, false, false);
 
 
 -- Datos para la tabla Imagen
--- IMAGES FOR RACK A 
+-- IMAGES FOR RACK A
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
@@ -370,7 +370,7 @@ INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'ht
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
 
--- IMAGES FOR RACK B 
+-- IMAGES FOR RACK B
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
@@ -1307,9 +1307,6 @@ INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 285);
 INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 286);
 INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 287);
 INSERT INTO Pallet (Figura, IdProducto) VALUES ('Triangulo', 288);
-
-
-
 
 
 -- Datos para la tabla Conteo

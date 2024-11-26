@@ -14,6 +14,10 @@ enum ProdCategory {
     Panque = 'Panque',
     Rol = 'Rol',
     Granola = 'Granola',
+    Pan = 'Pan',
+    PanTostado = 'PanTostado',
+    Mantecadas = 'Mantecadas',
+    Botana = 'Botana',
 }
 
 // Interface for the Product Model
