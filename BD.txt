@@ -351,322 +351,322 @@ INSERT INTO Posicion VALUES ('O030604', 'Reserva1', 'O3', 22, false, false);
 
 -- Datos para la tabla Imagen
 -- IMAGES FOR RACK A 
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image1.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image2.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image3.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image4.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image5.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image6.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image7.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image8.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image9.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image10.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image11.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image12.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image13.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image14.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image15.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image16.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image17.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image18.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_energy.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
 
 -- IMAGES FOR RACK B 
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image19.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image20.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image21.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image22.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image23.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image24.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image25.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image26.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image27.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image28.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image29.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image30.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image31.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image32.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image33.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image34.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image35.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image36.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
 
 -- IMAGES FOR RACK C
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image37.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image38.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image39.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image40.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image41.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image42.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image43.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image44.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image45.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image46.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image47.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image48.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image49.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image50.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image51.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image52.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image53.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image54.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_chispas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_chispas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_chispas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_chispas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_chispas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_chispas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_chispas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_chispas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_chispas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdonas_glas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdonas_glas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdonas_glas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdonas_glas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdonas_glas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdonas_glas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdonas_glas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdonas_glas.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdonas_glas.jpg', '2024-10-03');
 
 -- IMAGES FOR RACK D
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image55.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image56.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image57.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image58.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image59.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image60.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image61.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image62.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image63.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image64.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image65.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image66.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image67.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image68.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image69.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image70.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image71.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image72.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_vainilla.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_vainilla.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_vainilla.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_vainilla.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_vainilla.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_vainilla.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_vainilla.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_vainilla.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_vainilla.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
 
 -- IMAGES FOR RACK E
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image73.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image74.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image75.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image76.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image77.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image78.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image79.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image80.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image81.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image82.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image83.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image84.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image85.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image86.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image87.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image88.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image89.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image90.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fdona_rellena.jpeg', '2024-10-03');
 
 -- IMAGES FOR RACK F
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image91.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image92.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image93.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image94.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image95.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image96.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image97.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image98.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image99.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image100.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image101.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image102.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image103.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image104.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image105.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image106.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image107.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image108.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgranola.jpeg', '2024-10-03');
 
 -- IMAGES FOR RACK G
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image109.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image110.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image111.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image112.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image113.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image114.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image115.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image116.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image117.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image118.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image119.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image120.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image121.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image122.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image123.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image124.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image125.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image126.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fbarra_prote.jpg', '2024-10-03');
 
 -- IMAGES FOR RACK H
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image127.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image128.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image129.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image130.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image131.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image132.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image133.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image134.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image135.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image136.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image137.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image138.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image139.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image140.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image141.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image142.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image143.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image144.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
 
 -- IMAGES FOR RACK I
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image145.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image146.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image147.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image148.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image149.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image150.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image151.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image152.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image153.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image154.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image155.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image156.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image157.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image158.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image159.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image160.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image161.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image162.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
 
 -- IMAGES FOR RACK J
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image163.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image164.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image165.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image166.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image167.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image168.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image169.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image170.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image171.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image172.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image173.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image174.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image175.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image176.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image177.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image178.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image179.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image180.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fgalleta_avena.jpeg', '2024-10-03');
 
 -- IMAGES FOR RACK K
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image181.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image182.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image183.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image184.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image185.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image186.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image187.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image188.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image189.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image190.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image191.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image192.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image193.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image194.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image195.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image196.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image197.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image198.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpanque_nuez.png', '2024-10-03');
 
 -- IMAGES FOR RACK L
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image199.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image200.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image201.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image202.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image203.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image204.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image205.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image206.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image207.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image208.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image209.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image210.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image211.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image212.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image213.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image214.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image215.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://example.com/image216.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.pngg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
 
 -- IMAGES FOR RACK M
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image217.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image218.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image219.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image220.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image221.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image222.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image223.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image224.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image225.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image226.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image227.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image228.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image229.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image230.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image231.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image232.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image233.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image234.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image235.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image236.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image237.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image238.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image239.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image240.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Ftakis.png', '2024-10-03');
 
 -- IMAGES FOR RACK N
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image241.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image242.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image243.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image244.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image245.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image246.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image247.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image248.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image249.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image250.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image251.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image252.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image253.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image254.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image255.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image256.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image257.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image258.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image259.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image260.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image261.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image262.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image263.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image264.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_tostado.jpg', '2024-10-03');
 
 -- IMAGES FOR RACK O
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image265.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image266.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image267.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image268.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image269.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image270.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image271.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image272.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image273.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image274.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image275.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image276.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image277.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image278.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image279.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image280.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image281.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image282.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image283.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image284.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image285.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image286.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image287.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://example.com/image288.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva1', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fnito.jpg', '2024-10-03');
 
 
 -- Datos para la tabla Producto
@@ -751,24 +751,24 @@ INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXC
 INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU072', 'Mantecadas', 'Mantecadas', 'Mantecadas tradicionales', '29', 12, 72);
 
 -- PRODUCT FOR RACK E
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU073', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 73);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU074', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 74);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU075', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 75);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU076', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 76);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU077', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 77);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU078', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 78);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU079', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 79);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU080', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 80);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU081', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 81);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU082', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 82);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU083', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 83);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU084', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 84);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU085', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 85);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU086', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 86);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU087', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 87);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU088', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 88);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU089', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 89);
-INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU090', 'Dona Rellena', 'Dona', 'Dona con relleno de crema', '30', 22, 90);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU073', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 73);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU074', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 74);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU075', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 75);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU076', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 76);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU077', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 77);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU078', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 78);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU079', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 79);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU080', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 80);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU081', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 81);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU082', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 82);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU083', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 83);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU084', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 84);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU085', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 85);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU086', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 86);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU087', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 87);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU088', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 88);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU089', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 89);
+INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU090', 'Dona Rellena', 'Dona', 'Dona con relleno de fresa', '30', 22, 90);
 
 -- PRODUCT FOR RACK F
 INSERT INTO Producto (SKU, Nombre, Categoria, Descripcion, NormaEstiba, PiezasXCaja, IdImagen) VALUES ('SKU091', 'Granola Mix', 'Granola', 'Mezcla de granola con frutas', '42', 20, 91);
@@ -1427,6 +1427,122 @@ INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, D
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 145, 5, 'I090503', 'I', 159, 507);
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-09-16', 150, 145, 5, 'I090601', 'I', 160, 507);
 
+
+-- CYCLE COUNTING FOR RACK A
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 100, 100, 0, 'A010101', 'A', 1, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 100, 100, 0, 'A010102', 'A', 2, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 100, 100, 0, 'A010103', 'A', 3, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 100, 100, 0, 'A010201', 'A', 4, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 100, 100, 0, 'A010202', 'A', 5, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 100, 100, 0, 'A010203', 'A', 6, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 100, 100, 0, 'A010301', 'A', 7, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 100, 100, 0, 'A010302', 'A', 8, 482);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-11-16', '2024-10-01', 100, 100, 0, 'A010303', 'A', 9, 482);
+
+-- CYCLE COUNTING FOR RACK B
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'B020101', 'B', 19, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'B020102', 'B', 20, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'B020103', 'B', 21, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'B020201', 'B', 22, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'B020202', 'B', 23, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'B020203', 'B', 24, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'B020301', 'B', 25, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'B020302', 'B', 26, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'B020303', 'B', 27, 739);
+
+-- CYCLE COUNTING FOR RACK C
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030101', 'C', 37, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030102', 'C', 38, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030103', 'C', 39, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030201', 'C', 40, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030202', 'C', 41, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030203', 'C', 42, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030301', 'C', 43, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030302', 'C', 44, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030303', 'C', 45, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030401', 'C', 46, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030402', 'C', 47, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030403', 'C', 48, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030501', 'C', 49, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030502', 'C', 50, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030503', 'C', 51, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030601', 'C', 52, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030602', 'C', 53, 739);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 150, 150, 0, 'C030603', 'C', 54, 739);
+
+-- CYCLE COUNTING FOR RACK D
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040101', 'D', 55, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040102', 'D', 56, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040103', 'D', 57, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040201', 'D', 58, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040202', 'D', 59, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040203', 'D', 60, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040301', 'D', 61, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040302', 'D', 62, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040303', 'D', 63, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040401', 'D', 64, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040402', 'D', 65, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040403', 'D', 66, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040501', 'D', 67, 156);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'D040502', 'D', 68, 156);
+
+-- CYCLE COUNTING FOR RACK E
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'E050101', 'E', 73, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'E050102', 'E', 74, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'E050103', 'E', 75, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'E050201', 'E', 76, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'E050202', 'E', 77, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'E050203', 'E', 78, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'E050301', 'E', 79, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'E050302', 'E', 80, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'E050303', 'E', 81, 824);
+
+-- CYCLE COUNTING FOR RACK F
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'F060101', 'F', 91, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'F060102', 'F', 92, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'F060103', 'F', 93, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'F060201', 'F', 94, 824);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (15, '2024-11-16', '2024-10-01', 120, 120, 0, 'F060202', 'F', 95, 824);
+
+-- CYCLE COUNTING FOR RACK G
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 120, 119, 1, 'G070101', 'G', 109, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 120, 120, 0, 'G070102', 'G', 110, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 120, 115, 5, 'G070103', 'G', 111, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 120, 120, 0, 'G070201', 'G', 112, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 120, 119, 1, 'G070202', 'G', 113, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 120, 120, 0, 'G070203', 'G', 114, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 120, 120, 0, 'G070301', 'G', 115, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 120, 120, 0, 'G070302', 'G', 116, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 120, 120, 0, 'G070303', 'G', 117, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 120, 119, 1, 'G070401', 'G', 118, 391);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (20, '2024-11-16', '2024-10-01', 120, 100, 20, 'G070402', 'G', 119, 391);
+
+-- CYCLE COUNTING FOR RACK H
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-10-01', '2024-10-01', 100, 90, 10, 'H080101', 'H', 127, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-10-01', '2024-10-01', 100, 99, 1, 'H080102', 'H', 128, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-10-01', '2024-10-01', 100, 100, 0, 'H080103', 'H', 129, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-10-01', '2024-10-01', 100, 100, 0, 'H080201', 'H', 130, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (10, '2024-10-01', '2024-10-01', 100, 98, 2, 'H080202', 'H', 131, 507);
+
+-- CYCLE COUNTING FOR RACK I
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 150, 0, 'I090101', 'I', 145, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 150, 0, 'I090102', 'I', 146, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 150, 0, 'I090103', 'I', 147, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 125, 25, 'I090201', 'I', 148, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 150, 0, 'I090202', 'I', 149, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 150, 0, 'I090203', 'I', 150, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 110, 40, 'I090301', 'I', 151, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 150, 0, 'I090302', 'I', 152, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 149, 1, 'I090303', 'I', 153, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 149, 1, 'I090401', 'I', 154, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 149, 1, 'I090402', 'I', 155, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 150, 0, 'I090403', 'I', 156, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 150, 0, 'I090501', 'I', 157, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 145, 5, 'I090502', 'I', 158, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 145, 5, 'I090503', 'I', 159, 507);
+INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (30, '2024-10-16', '2024-10-01', 150, 145, 5, 'I090601', 'I', 160, 507);
+
+
 -- CYCLE COUNTING FOR RACK J
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 128, 2, 'J100101', 'J', 163, 268);
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (25, '2024-11-16', '2024-10-01', 130, 130, 0, 'J100102', 'J', 164, 268);
@@ -1498,26 +1614,3 @@ INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, D
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030402', 'O', 278, 372);
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 110, 10, 'O030403', 'O', 279, 372);
 INSERT INTO Conteo (Pallets, FechaCad, FechaConteo, CajasSistema, CajasFisico, DifCajas, IdPos, IdRack, IdProducto, NumEmpleado) VALUES (55, '2024-11-16', '2024-10-01', 120, 120, 0, 'O030404', 'O', 280, 372);
-
-
--- Aspectos Generales
-Si al registro de diferencias
-
-Pallets: 0 - 126
-
-
-Reserva1: M, N, O
-Posicion: 24
-Profundidad: 22
-
-
-
-Reserva2: A - L
-Posicion: 18
-Profundidad: 7
-
-
-Outbound: P, Q, R, S, T, U
-Inbound: 
-
-Posicion: 18
