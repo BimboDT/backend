@@ -138,7 +138,7 @@ class ConteoController extends AbstractController {
     private async postCountingReport(req: Request, res: Response) {
         try {
             console.log(req.body);
-            
+
             await db.Conteo.create(req.body);
 
             console.log("Reporte de conteo creado exitosamente");
@@ -171,10 +171,10 @@ class ConteoController extends AbstractController {
     private async getRackCompleteness(req: Request, res: Response) {
         try {
             const { ubi, fechaConteo } = req.params;
-    
+
             const completeness = await db.sequelize.query(
                 `
-                SELECT 
+                SELECT
                     Rack.IdRack AS IdRack,
                     ROUND(LEAST((SUM(Conteo.CajasFisico) / Rack.Capacidad), 1) * 8, 0) AS Completeness,
                     SUM(Conteo.CajasFisico) as SumaTotal
@@ -189,7 +189,7 @@ class ConteoController extends AbstractController {
                     type: db.Sequelize.QueryTypes.SELECT,
                 }
             );
-                
+
             res.status(200).json(completeness);
         } catch (err) {
             console.error(err);
@@ -200,7 +200,7 @@ class ConteoController extends AbstractController {
     // Function to get the number of incidences (2° filter)
     private async getNumberOfIncidences(req: Request, res: Response) {
         try {
-            
+
             const { ubi, fechaConteo } = req.params;
 
             const incidencias = await db.sequelize.query(
@@ -236,23 +236,23 @@ class ConteoController extends AbstractController {
     private async getNumberOfCycleCountings(req: Request, res: Response) {
         try {
             const { ubi, fechaConteo } = req.params;
-    
+
             // Obtener los racks dentro de la ubicación especificada
             const cycleCountings = await db.sequelize.query(
                 `
-                SELECT 
+                SELECT
                     Rack.IdRack AS RackId,
-                    (SELECT COUNT(*) 
-                    FROM Posicion 
+                    (SELECT COUNT(*)
+                    FROM Posicion
                     WHERE SUBSTRING(Posicion.IdPos, 1, 1) = Rack.IdRack
                     AND Posicion.Ubicacion = :ubi) AS TotalPositions,
                     COUNT(Conteo.IdConteo) AS CompletedCountings,
                     ROUND(
-                        (COUNT(Conteo.IdConteo) * 8.0 / 
-                        (SELECT COUNT(*) 
-                        FROM Posicion 
+                        (COUNT(Conteo.IdConteo) * 8.0 /
+                        (SELECT COUNT(*)
+                        FROM Posicion
                         WHERE SUBSTRING(Posicion.IdPos, 1, 1) = Rack.IdRack
-                            AND Posicion.Ubicacion = :ubi)), 
+                            AND Posicion.Ubicacion = :ubi)),
                         0
                     ) AS CycleCountCompleteness
                 FROM Conteo
@@ -267,7 +267,7 @@ class ConteoController extends AbstractController {
                     type: db.Sequelize.QueryTypes.SELECT,
                 }
             );
-    
+
             res.status(200).json(cycleCountings);
         } catch (error) {
             console.error(error);
@@ -279,24 +279,24 @@ class ConteoController extends AbstractController {
     private async getProductByLocation(req: Request, res: Response) {
         try {
             const { ubi } = req.params;
-        
+
             const conteos = await db.Conteo.findAll({
                 include: {
                     model: db.Posicion,
                     as: 'Posicion',
                     where: { Ubicacion: ubi },
-                    attributes: ['Ubicacion'] 
+                    attributes: ['Ubicacion']
                 },
                 attributes: ['IdProducto']
             });
-        
+
             const productosIds = conteos.map((conteo: any) => conteo.IdProducto);
-        
+
             const productos = await db.Producto.findAll({
                 where: { IdProducto: productosIds },
                 attributes: ['IdProducto', 'Nombre']
             });
-        
+
             const resultado = conteos.map((conteo: any) => {
                 const producto = productos.find((p: any) => p.IdProducto === conteo.IdProducto);
                 return {
@@ -304,9 +304,9 @@ class ConteoController extends AbstractController {
                     Nombre: producto ? producto.Nombre : "Producto no encontrado"
                 };
             });
-        
+
             res.status(200).json(resultado);
-    
+
         } catch (error) {
             console.log(error);
             res.status(500).send("Internal server error: " + error);
@@ -322,9 +322,8 @@ class ConteoController extends AbstractController {
                 where: {Nombre: prod},
                 attributes: ['Descripcion']
             })
-            
+
             if (producto) {
-                // res.status(200).json(producto["Descripcion"]);
                 res.status(200).json(producto);
 
             } else {
@@ -344,15 +343,15 @@ class ConteoController extends AbstractController {
             const { anio } = req.params;
 
             const incidenciasPorMes: { [key: string]: number } = {};
-            
+
             for (let mes = 0; mes < 12; mes++) {
                 const fechaInicio = new Date(parseInt(anio), mes, 1);
                 const fechaFin = new Date(parseInt(anio), mes + 1, 0);
-            
+
                 // Convertir fechas a formato YYYY-MM-DD para trabajar con la fecha únicamente
                 const inicioStr = fechaInicio.toISOString().split("T")[0];
                 const finStr = fechaFin.toISOString().split("T")[0];
-            
+
                 const conteos = await db.Conteo.findAll({
                     where: {
                         [Op.and]: [
@@ -362,16 +361,16 @@ class ConteoController extends AbstractController {
                     },
                     raw: true // Opcional, mejora el rendimiento
                 });
-            
+
                 const incidencias = conteos.reduce((count: any, conteo: any) => {
                     return conteo.CajasSistema !== conteo.CajasFisico ? count + 1 : count;
                 }, 0);
-            
+
                 const nombreMes = fechaInicio.toLocaleString('es-ES', { month: 'long' });
                 incidenciasPorMes[nombreMes] = incidencias;
             }
-            
-            res.status(200).json(incidenciasPorMes);            
+
+            res.status(200).json(incidenciasPorMes);
 
         } catch (error: any) {
             console.log(error);
@@ -381,33 +380,30 @@ class ConteoController extends AbstractController {
 
     private async getMostDiscrepancyProductTop10(req: Request, res: Response) {
         try {
-            // Obtener las incidencias agrupadas por producto
-            const top10DiscrepancyProducts = await db.Conteo.findAll({
-                include: [
-                    {
-                        model: db.Producto,
-                        as: "Producto",
-                        attributes: ["Nombre"] // Obtenemos solo el nombre del producto
-                    }
-                ],
-                attributes: [
-                    [Sequelize.col("Producto.Nombre"), "NombreProducto"], // Agrupamos por nombre del producto
-                    [Sequelize.fn("SUM", Sequelize.literal("ABS(CajasFisico - CajasSistema)")), "TotalDiscrepancia"] // Calculamos la discrepancia total
-                ],
-                group: ["Producto.Nombre"], // Agrupamos por el nombre del producto
-                order: [[Sequelize.literal("TotalDiscrepancia"), "DESC"]], // Ordenamos por discrepancia descendente
-                limit: 10, // Limitar al top 10
-                raw: false
-            });
-            
-            const formattedResults = top10DiscrepancyProducts.map((product: any) => ({
-                nombreProducto: product.get("NombreProducto"),
-                totalDiscrepancia: product.get("TotalDiscrepancia")
+            // Ejecutar la consulta directamente
+            const results = await db.sequelize.query(
+                `
+                SELECT
+                    Producto.Nombre AS NombreProducto,
+                    SUM(ABS(Conteo.CajasFisico - Conteo.CajasSistema)) AS TotalDiscrepancia
+                FROM Conteo
+                JOIN Producto ON Conteo.IdProducto = Producto.IdProducto
+                GROUP BY Producto.Nombre
+                ORDER BY TotalDiscrepancia DESC
+                LIMIT 10;
+                `,
+                {
+                    type: db.Sequelize.QueryTypes.SELECT // Devuelve un array de resultados en formato JSON
+                }
+            );
+
+            // Formatear y enviar los resultados
+            const formattedResults = results.map((row: any) => ({
+                nombreProducto: row.NombreProducto,
+                totalDiscrepancia: row.TotalDiscrepancia
             }));
-            
+
             res.status(200).json(formattedResults);
-            
-            
         } catch (error: any) {
             console.log(error);
             res.status(500).send("Internal server error: " + error);
@@ -422,16 +418,16 @@ class ConteoController extends AbstractController {
                 ],
                 raw: true,
             });
-    
+
             const totalCapacity = totalCapacityResult[0].TotalCapacity;
-    
+
             const totalCajasFisicoResult = await db.Conteo.findAll({
                 attributes: [
                     [db.Sequelize.fn("SUM", db.Sequelize.col("CajasFisico")), "TotalCajasFisico"]
                 ],
                 raw: true,
             });
-    
+
             const totalCajasFisico = totalCajasFisicoResult[0].TotalCajasFisico;
 
             res.status(200).json({
@@ -445,35 +441,31 @@ class ConteoController extends AbstractController {
         }
     }
 
-    private async getTop10Products(req: Request, res: Response) { 
+    private async getTop10Products(req: Request, res: Response) {
         try {
+            const top10ProductsByName = await db.sequelize.query(
+                `
+                SELECT
+                    Producto.Nombre AS NombreProducto,
+                    SUM(Conteo.CajasFisico) AS TotalCajasFisico
+                FROM Conteo
+                JOIN Producto ON Conteo.IdProducto = Producto.IdProducto
+                GROUP BY Producto.Nombre
+                ORDER BY TotalCajasFisico DESC
+                LIMIT 10;
+                `,
+                {
+                    type: db.Sequelize.QueryTypes.SELECT
+                }
+            );
 
-            const top10ProductsByName = await db.Conteo.findAll({
-                include: [
-                    {
-                        model: db.Producto,
-                        as: "Producto", // Asegúrate de tener la relación configurada en el modelo
-                        attributes: ["Nombre"] // Incluimos solo el nombre del producto
-                    }
-                ],
-                attributes: [
-                    [Sequelize.col("Producto.Nombre"), "NombreProducto"], // Agrupamos por nombre
-                    [Sequelize.fn("SUM", Sequelize.col("CajasFisico")), "TotalCajasFisico"] // Sumamos la cantidad física
-                ],
-                group: ["Producto.Nombre"], // Agrupamos por el nombre del producto
-                order: [[Sequelize.literal("TotalCajasFisico"), "DESC"]], // Ordenamos por cantidad total
-                limit: 10, // Limitar al top 10
-                raw: false // Esto permite acceder a las asociaciones correctamente
-            });
-            
-            const formattedResults = top10ProductsByName.map((product: any) => ({
-                nombreProducto: product.get("NombreProducto"), // Obtenemos el nombre desde la consulta
-                totalCajasFisico: product.get("TotalCajasFisico") // Obtenemos la suma total
+            const formattedResults = top10ProductsByName.map((row: any) => ({
+                nombreProducto: row.NombreProducto,
+                totalCajasFisico: row.TotalCajasFisico
             }));
-            
-            res.status(200).json(formattedResults);
 
-        } catch (error: any) { 
+            res.status(200).json(formattedResults);
+        } catch (error: any) {
             console.error(error);
             res.status(500).send("Internal server error: " + error);
         }
