@@ -116,13 +116,19 @@ class ConteoController extends AbstractController {
         try {
             const { idPos } = req.params;
 
-            const latestRecord = await db.Conteo.findOne({
-                where: {
-                    IdPos: idPos,
-                },
-                attributes: ['Pallets', 'CajasFisico', 'IdProducto'],
-                order: [['FechaConteo', 'DESC']],
-            });
+            const latestRecord = await db.sequelize.query(
+                `
+                SELECT Pallets, CajasFisico, IdProducto
+                FROM Conteo
+                WHERE IdPos = :idPos
+                ORDER BY "FechaConteo" DESC
+                LIMIT 1;
+                `,
+                {
+                    replacements: { idPos },
+                    type: db.Sequelize.QueryTypes.SELECT
+                }
+            );
 
             if (!latestRecord) {
                 res.status(400).send('No se encontraron registros para IdPos')
