@@ -157,13 +157,21 @@ class ConteoController extends AbstractController {
 
     private async updatePosition(req: Request, res: Response) {
         try {
-            const { idPos, contando } = req.body;
+            const { idPos, contado } = req.body;
+
+
+            const query = `UPDATE Posicion SET Contado = :contado WHERE IdPos = :idPos`;
+
+            await db.sequelize.query(query, {
+            replacements: { contado: contado, idPos: idPos },
+            type: db.Sequelize.QueryTypes.UPDATE
+            });
 
             // Update the position
-            await db.Posicion.update(
-                {Contando: contando},
-                {where: {IdPos: idPos}}
-            );
+            // await db.Posicion.update(
+            //     {Contando: contando},
+            //     {where: {IdPos: idPos}}
+            // );
 
             res.status(200).send("Posición actualizada");
         } catch (err) {
