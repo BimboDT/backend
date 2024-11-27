@@ -94,17 +94,16 @@ class ConteoController extends AbstractController {
 
             const uncountedPositions = await db.Posicion.findAll({
                 where: {
-                    Contado: false,
                     IdPos: {
                         [Op.like]: `${letra}%`,
                     },
                 },
-                attributes: ['IdPos'],
+                attributes: ['IdPos', 'Contado'],
             });
 
-            const positionsList = uncountedPositions.map((pos:Posicion) => pos.IdPos);
+            //const positionsList = uncountedPositions.map((pos:Posicion) => pos.IdPos);
 
-            res.status(200).json({ positions: positionsList });
+            res.status(200).json({ uncountedPositions });
         } catch (error) {
             console.log(error);
             res.status(500).send('Internal server error: ' + error);
