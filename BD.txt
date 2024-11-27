@@ -371,15 +371,15 @@ INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'ht
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
 
 -- IMAGES FOR RACK B
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpgg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_blanco.jpg', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_trigo.jpg', '2024-10-03');
@@ -511,15 +511,15 @@ INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'ht
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_dulce.png ', '2024-10-03');
 
 -- IMAGES FOR RACK I
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_integral.jpg', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fpan_centeno.jpeg', '2024-10-03');
@@ -581,7 +581,7 @@ INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'ht
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
-INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.pngg', '2024-10-03');
+INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
 INSERT INTO Imagen (Ubicacion, Tipo, Url, Fecha) VALUES ('Reserva2', 'Prod', 'https://objectstorage.us-sanjose-1.oraclecloud.com/n/ax0x2vra1xbr/b/fotos-web/o/Prod%2Fmantecadas.png', '2024-10-03');
