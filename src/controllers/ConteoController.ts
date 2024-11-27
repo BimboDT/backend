@@ -101,8 +101,6 @@ class ConteoController extends AbstractController {
                 attributes: ['IdPos', 'Contado'],
             });
 
-            //const positionsList = uncountedPositions.map((pos:Posicion) => pos.IdPos);
-
             res.status(200).json({ uncountedPositions });
         } catch (error) {
             console.log(error);
