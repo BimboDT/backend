@@ -40,6 +40,7 @@ class ImageController extends AbstractController {
         }
       }
 
+    // Function to get the product information on a specific rack
       private async getProductInfo(req: Request, res: Response) {
         try {
           const { rack } = req.params;
@@ -93,7 +94,7 @@ class ImageController extends AbstractController {
       }
       }
 
-
+      // Function to upload an image to the database
       private async uploadImage(req: Request, res: Response) {
         try {
           console.log(req.body);

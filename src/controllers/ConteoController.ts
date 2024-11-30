@@ -85,7 +85,7 @@ class ConteoController extends AbstractController {
         }
     }
 
-    // Obtener posiciones no contadas
+    // Get uncounted positions
     private async getUncountedPositions(req: Request, res: Response) {
         try {
 
@@ -108,7 +108,7 @@ class ConteoController extends AbstractController {
         }
     }
 
-    // Obtener valores más actuales para un IdPos
+    // Get the most current values for an IdPos
     private async getLatestConteoForPosition(req: Request, res: Response) {
         try {
             const { idPos } = req.params;
@@ -138,6 +138,7 @@ class ConteoController extends AbstractController {
         }
     }
 
+    // Create a counting report
     private async postCountingReport(req: Request, res: Response) {
         try {
             console.log(req.body);
@@ -152,6 +153,7 @@ class ConteoController extends AbstractController {
         }
     }
 
+    // Function to update the position of a rack
     private async updatePosition(req: Request, res: Response) {
         try {
             const { idPos, contado } = req.body;
@@ -163,12 +165,6 @@ class ConteoController extends AbstractController {
             replacements: { contado: contado, idPos: idPos },
             type: db.Sequelize.QueryTypes.UPDATE
             });
-
-            // Update the position
-            // await db.Posicion.update(
-            //     {Contando: contando},
-            //     {where: {IdPos: idPos}}
-            // );
 
             res.status(200).send("Posición actualizada");
         } catch (err) {
@@ -286,7 +282,7 @@ class ConteoController extends AbstractController {
         }
     }
 
-
+    // Function to get the product by location
     private async getProductByLocation(req: Request, res: Response) {
         try {
             const { ubi } = req.params;
@@ -324,7 +320,7 @@ class ConteoController extends AbstractController {
         }
     }
 
-
+    // Function to get the description of a product by name
     private async getDescriptionByName(req: Request, res: Response) {
         try {
             const { prod } = req.params;
@@ -348,7 +344,7 @@ class ConteoController extends AbstractController {
 
     }
 
-
+    // Function to get the number of incidences by month
     private async getIncidenciaByMonth(req: Request, res: Response) {
         try {
             const { anio } = req.params;
@@ -389,6 +385,7 @@ class ConteoController extends AbstractController {
         }
     }
 
+    // Function to get the top 10 products with the most discrepancy
     private async getMostDiscrepancyProductTop10(req: Request, res: Response) {
         try {
             // Ejecutar la consulta directamente
@@ -421,6 +418,7 @@ class ConteoController extends AbstractController {
         }
     }
 
+    // Function to get the warehouse completeness
     private async getWarehouseCompleteness(req: Request, res: Response) {
         try {
             const totalCapacityResult = await db.Rack.findAll({
@@ -452,6 +450,7 @@ class ConteoController extends AbstractController {
         }
     }
 
+    // Function to get the top 10 products
     private async getTop10Products(req: Request, res: Response) {
         try {
             const top10ProductsByName = await db.sequelize.query(
